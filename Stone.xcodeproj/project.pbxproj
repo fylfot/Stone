@@ -18,6 +18,10 @@
 		6E83AF6D14EE6CD900DB8962 /* stone_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E83AF6C14EE6CD900DB8962 /* stone_image.png */; };
 		6E83AF7014EE743F00DB8962 /* ZoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E83AF6F14EE743F00DB8962 /* ZoneView.m */; };
 		6E83AF7D14EE9C0600DB8962 /* stone_image_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E83AF7C14EE9C0600DB8962 /* stone_image_highlighted.png */; };
+		6E83AF8F14EEB0A900DB8962 /* NSDate+Motive.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E83AF8E14EEB0A900DB8962 /* NSDate+Motive.m */; };
+		6E83AF9214EEB6E600DB8962 /* ReportView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E83AF9114EEB6E600DB8962 /* ReportView.m */; };
+		6E83AF9514EEB78C00DB8962 /* ReportDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E83AF9414EEB78C00DB8962 /* ReportDayView.m */; };
+		6E83AF9714EEC66B00DB8962 /* report_gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E83AF9614EEC66B00DB8962 /* report_gradient.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,13 @@
 		6E83AF6E14EE743F00DB8962 /* ZoneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZoneView.h; path = views/ZoneView.h; sourceTree = "<group>"; };
 		6E83AF6F14EE743F00DB8962 /* ZoneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZoneView.m; path = views/ZoneView.m; sourceTree = "<group>"; };
 		6E83AF7C14EE9C0600DB8962 /* stone_image_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stone_image_highlighted.png; sourceTree = "<group>"; };
+		6E83AF8D14EEB0A900DB8962 /* NSDate+Motive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Motive.h"; sourceTree = "<group>"; };
+		6E83AF8E14EEB0A900DB8962 /* NSDate+Motive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Motive.m"; sourceTree = "<group>"; };
+		6E83AF9014EEB6E600DB8962 /* ReportView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReportView.h; path = views/ReportView.h; sourceTree = "<group>"; };
+		6E83AF9114EEB6E600DB8962 /* ReportView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReportView.m; path = views/ReportView.m; sourceTree = "<group>"; };
+		6E83AF9314EEB78C00DB8962 /* ReportDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReportDayView.h; path = views/ReportDayView.h; sourceTree = "<group>"; };
+		6E83AF9414EEB78C00DB8962 /* ReportDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReportDayView.m; path = views/ReportDayView.m; sourceTree = "<group>"; };
+		6E83AF9614EEC66B00DB8962 /* report_gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = report_gradient.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +107,7 @@
 		6E83AF4C14EE621E00DB8962 /* Stone */ = {
 			isa = PBXGroup;
 			children = (
+				6E83AF8C14EEB0A900DB8962 /* Common */,
 				6E83AF7114EE744700DB8962 /* views */,
 				6E83AF6B14EE6CD900DB8962 /* Resources */,
 				6E83AF6314EE630B00DB8962 /* Models */,
@@ -134,6 +146,7 @@
 		6E83AF6B14EE6CD900DB8962 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6E83AF9614EEC66B00DB8962 /* report_gradient.png */,
 				6E83AF7C14EE9C0600DB8962 /* stone_image_highlighted.png */,
 				6E83AF6C14EE6CD900DB8962 /* stone_image.png */,
 			);
@@ -144,10 +157,24 @@
 		6E83AF7114EE744700DB8962 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				6E83AF9014EEB6E600DB8962 /* ReportView.h */,
+				6E83AF9114EEB6E600DB8962 /* ReportView.m */,
 				6E83AF6E14EE743F00DB8962 /* ZoneView.h */,
 				6E83AF6F14EE743F00DB8962 /* ZoneView.m */,
+				6E83AF9314EEB78C00DB8962 /* ReportDayView.h */,
+				6E83AF9414EEB78C00DB8962 /* ReportDayView.m */,
 			);
 			name = views;
+			sourceTree = "<group>";
+		};
+		6E83AF8C14EEB0A900DB8962 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6E83AF8D14EEB0A900DB8962 /* NSDate+Motive.h */,
+				6E83AF8E14EEB0A900DB8962 /* NSDate+Motive.m */,
+			);
+			name = Common;
+			path = common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +232,7 @@
 				6E83AF5D14EE621E00DB8962 /* MainMenu.xib in Resources */,
 				6E83AF6D14EE6CD900DB8962 /* stone_image.png in Resources */,
 				6E83AF7D14EE9C0600DB8962 /* stone_image_highlighted.png in Resources */,
+				6E83AF9714EEC66B00DB8962 /* report_gradient.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +248,9 @@
 				6E83AF6614EE633000DB8962 /* Zone.m in Sources */,
 				6E83AF6A14EE656300DB8962 /* TimePeriod.m in Sources */,
 				6E83AF7014EE743F00DB8962 /* ZoneView.m in Sources */,
+				6E83AF8F14EEB0A900DB8962 /* NSDate+Motive.m in Sources */,
+				6E83AF9214EEB6E600DB8962 /* ReportView.m in Sources */,
+				6E83AF9514EEB78C00DB8962 /* ReportDayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

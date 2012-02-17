@@ -7,6 +7,7 @@
 //
 
 #import "TimePeriod.h"
+#import "NSDate+Motive.h"
 
 static NSString * const kStartDateKey = @"kStartDateKey";
 static NSString * const kEndDateKey = @"kEndDateKey";
@@ -38,6 +39,9 @@ static NSString * const kEndDateKey = @"kEndDateKey";
 }
 
 - (NSInteger)rawInterval {
+    if (![_startDate isToday] && ![_endDate isToday]) {
+        return 0; // don't calculate another days for raw view
+    }
     return [_endDate timeIntervalSinceDate:_startDate];
 }
 

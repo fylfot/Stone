@@ -18,6 +18,7 @@ static NSString * const kStoneImageHighlightedName = @"stone_image_highlighted.p
 
 static NSString * const kNewNameString = @"New Name";
 static NSString * const kInmutableException = @"Inmutable object exception";
+static NSString * const kStopString = @"Stop Stone";
 
 static NSString * const kZoneNameChanged = @"kZoneNameChanged";
 

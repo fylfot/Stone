@@ -17,6 +17,7 @@
 @property (nonatomic, strong, readonly) Zone *currentStone;
 @property (nonatomic, strong, readonly) NSDate *startDate;
 @property (nonatomic, strong, readonly) NSTimer *timer;
+@property (nonatomic, strong, readonly) NSMenuItem *stopStoneItem;
 
 - (void)_reloadData;
 - (void)_stopStone;
@@ -34,6 +35,7 @@
 @synthesize currentStone = _currentStone;
 @synthesize startDate = _startDate;
 @synthesize timer = _timer;
+@synthesize stopStoneItem = _stopStoneItem;
 
 - (void)_createTrayBar  {
     NSZone *menuZone = [NSMenu menuZone];
@@ -41,6 +43,9 @@
     NSMenuItem *menuItem;
     
     [self.menu addItem:[NSMenuItem separatorItem]];
+    
+    _stopStoneItem = [self.menu addItemWithTitle:kStopString action:nil keyEquivalent:@""];
+    [self.stopStoneItem setTarget:self];
     
     menuItem = [self.menu addItemWithTitle:kReportsString action:@selector(openReports:) keyEquivalent:@""];
     [menuItem setTarget:self];
@@ -130,10 +135,6 @@
     [self _reloadData];
 }
 
-//- (void)systemTrayClicked:(NSStatusItem *)tray {
-//    self.systemTray.image = [NSImage imageNamed:kStoneImageHighlightedName];
-//}
-
 - (void)startStone:(NSMenuItem *)menuItem {
     _startDate = [NSDate date];
     [self _stopStone];
@@ -141,6 +142,7 @@
     _currentStone = [[Zone availableZones] objectAtIndex:menuItem.tag];
     [self.currentStone startPeriod];
     [self _makeATickUpdate:nil];
+    self.stopStoneItem.action = @selector(_stopStone);
 }
 
 - (void)_stopStone {
@@ -150,6 +152,7 @@
     if (self.currentStone) {
         [self.currentStone stopPeriod];
     }
+    self.stopStoneItem.action = nil;
 }
 
 - (void)_makeATickUpdate:(id)sender {
@@ -158,6 +161,8 @@
 }
 
 - (void)openReports:(NSMenuItem *)menuItem {
+    [self.reports.contentView setNeedsLayout:YES];
+    [self.reports.contentView layoutSubtreeIfNeeded];
     [self.reports makeKeyAndOrderFront:nil];
 }
 

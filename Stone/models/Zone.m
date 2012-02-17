@@ -130,7 +130,7 @@ static NSMutableArray *__availableZones = nil;
     if (self.summaryIntervalToday < kMinimalShowValue) {
         return self.name;
     } else {
-        return [NSString stringWithFormat:@"%@ %@", FormatInterval(self.summaryIntervalToday, YES), self.name];
+        return [NSString stringWithFormat:@"(%@) %@", FormatInterval(self.summaryIntervalToday, YES), self.name];
     }
 }
 

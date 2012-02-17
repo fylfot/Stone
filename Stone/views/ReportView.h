@@ -1,0 +1,15 @@
+//
+//  ReportView.h
+//  Stone
+//
+//  Created by Stanislav Cherednichenko on 17.02.12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//
+
+#import <Cocoa/Cocoa.h>
+
+@interface ReportView : NSView
+
+@property (nonatomic, strong, readonly) NSArray *dayViews;
+
+@end
