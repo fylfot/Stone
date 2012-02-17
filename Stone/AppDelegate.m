@@ -27,6 +27,7 @@
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize reports = _reports;
 @synthesize menu = _menu;
 @synthesize systemTray = _systemTray;
 @synthesize tableView = _tableView;
@@ -62,12 +63,12 @@
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    srandom((unsigned int)time(NULL));
-    [self _createTrayBar];
+    [Zone loadApplicationData];
     
-    [Zone addNewZone];
-    [Zone addNewZone];
-    [Zone addNewZone];
+    srandom((unsigned int)time(NULL));
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_didChangeNameOfZone:) name:kZoneNameChanged object:nil];    
+
+    [self _createTrayBar];
     
     [self _reloadData];
 }
@@ -85,6 +86,16 @@
 
 - (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
     return [[Zone availableZones] objectAtIndex:row];
+}
+
+- (void)_didChangeNameOfZone:(NSNotification *)notification {
+    NSArray *zones = [Zone availableZones];
+    for (NSInteger i = 0; i < [zones count]; i++) {
+        if ([zones objectAtIndex:i] == notification.object) {
+            ((NSMenuItem *)[self.menu.itemArray objectAtIndex:i]).title = [notification.object description];
+            break;
+        }
+    }
 }
 
 // Don't know how make it better
@@ -143,26 +154,24 @@
 
 - (void)_makeATickUpdate:(id)sender {
     NSTimeInterval interval = [[NSDate date] timeIntervalSinceDate:self.startDate];
-    
-    NSInteger numSeconds = interval;
-    NSInteger days = numSeconds / (60 * 60 * 24);
-    numSeconds -= days * (60 * 60 * 24);
-    NSInteger hours = numSeconds / (60 * 60);
-    numSeconds -= hours * (60 * 60);
-    NSInteger minutes = numSeconds / 60;
-    numSeconds -= minutes * 60;
-    
-    self.systemTray.title = [NSString stringWithFormat:@"%.2d:%.2d:%.2d", hours, minutes, numSeconds];
+    self.systemTray.title = FormatInterval(interval, NO);
 }
 
 - (void)openReports:(NSMenuItem *)menuItem {
+    [self.reports makeKeyAndOrderFront:nil];
 }
 
 - (void)openPreferences:(NSMenuItem *)menuItem {
+    [self.window makeKeyAndOrderFront:nil];
 }
 
 - (void)killApplication:(NSMenuItem *)menuItem {
     [[NSApplication sharedApplication] terminate:menuItem];
+}
+
+- (void)applicationWillTerminate:(NSNotification *)notification {
+    [self _stopStone];
+    [Zone saveApplicationData];
 }
 
 @end

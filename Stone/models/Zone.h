@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class TimePeriod;
-@interface Zone : NSObject
+@interface Zone : NSObject <NSCoding>
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSColor *color;
@@ -20,5 +20,7 @@
 + (void)addNewZone;
 - (void)startPeriod;
 - (void)stopPeriod;
++ (void)loadApplicationData;
++ (void)saveApplicationData;
 
 @end

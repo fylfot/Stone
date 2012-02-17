@@ -11,6 +11,7 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate, NSTableViewDataSource, NSTableViewDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSWindow *reports;
 
 @property (nonatomic, strong) IBOutlet NSTableView *tableView;
 

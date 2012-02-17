@@ -19,6 +19,24 @@ static NSString * const kStoneImageHighlightedName = @"stone_image_highlighted.p
 static NSString * const kNewNameString = @"New Name";
 static NSString * const kInmutableException = @"Inmutable object exception";
 
+static NSString * const kZoneNameChanged = @"kZoneNameChanged";
+
 #define FRAND() ((float) random()/RAND_MAX)
+
+static NSString *FormatInterval(NSTimeInterval interval, BOOL isShort) {
+    
+    NSInteger numSeconds = interval;
+    NSInteger days = numSeconds / (60 * 60 * 24);
+    numSeconds -= days * (60 * 60 * 24);
+    NSInteger hours = numSeconds / (60 * 60);
+    numSeconds -= hours * (60 * 60);
+    NSInteger minutes = numSeconds / 60;
+    numSeconds -= minutes * 60;
+    if (isShort) {
+        return [NSString stringWithFormat:@"%.2d:%.2d", hours, minutes];
+    } else {
+        return [NSString stringWithFormat:@"%.2d:%.2d:%.2d", hours, minutes, numSeconds];   
+    }
+}
 
 #endif

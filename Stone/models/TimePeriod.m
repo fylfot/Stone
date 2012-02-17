@@ -8,10 +8,14 @@
 
 #import "TimePeriod.h"
 
+static NSString * const kStartDateKey = @"kStartDateKey";
+static NSString * const kEndDateKey = @"kEndDateKey";
+
 @implementation TimePeriod
 
 @synthesize startDate = _startDate;
 @synthesize endDate = _endDate;
+@synthesize rawInterval;
 
 + (TimePeriod *)createTimePeriod {
     TimePeriod *result = [[TimePeriod alloc] init];
@@ -31,6 +35,24 @@
         [NSException exceptionWithName:kInmutableException reason:@"End date already setted" userInfo:nil];
     }
     _endDate = [NSDate date];
+}
+
+- (NSInteger)rawInterval {
+    return [_endDate timeIntervalSinceDate:_startDate];
+}
+
+- (id)initWithCoder:(NSCoder *)coder {
+    self = [super init];
+    if (self) {
+        _startDate = [coder decodeObjectForKey:kStartDateKey];
+        _endDate = [coder decodeObjectForKey:kEndDateKey];
+    }
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)coder {
+    [coder encodeObject:_startDate forKey:kStartDateKey];
+    [coder encodeObject:_endDate forKey:kEndDateKey];
 }
 
 @end

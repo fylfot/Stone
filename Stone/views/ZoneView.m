@@ -59,6 +59,7 @@ const CGFloat kColorBrightLimit = 0.4;
 - (void)controlTextDidEndEditing:(NSNotification *)aNotification {
     if([aNotification object] == self.textField) {
         [self _updateColor];
+        [[NSNotificationCenter defaultCenter] postNotificationName:kZoneNameChanged object:self.zone];
     }
 }
 

@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TimePeriod : NSObject
+@interface TimePeriod : NSObject <NSCoding>
 
 @property (nonatomic, strong, readonly) NSDate *startDate;
 @property (nonatomic, strong, readonly) NSDate *endDate;
+@property (assign, readonly) NSInteger rawInterval;
 
 + (TimePeriod *)createTimePeriod;
 - (void)start;
