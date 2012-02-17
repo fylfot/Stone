@@ -8,8 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate, NSTableViewDataSource, NSTableViewDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+
+@property (nonatomic, strong) IBOutlet NSTableView *tableView;
+
+- (IBAction)addNewZone:(NSButton *)button;
 
 @end
