@@ -56,10 +56,11 @@ static NSString * const kEndDateKey = @"kEndDateKey";
 }
 
 - (NSInteger)rawInterval {
-    if (![self.startDate isToday] && ![self.endDate isToday]) {
-        return 0; // don't calculate another days for raw view
-    }
-    return [self time];
+//    NSDate *today = [NSDate date];
+//    if ([self.startDate isTodayViaIntervals] || [self.endDate isTodayViaIntervals]) {
+        return [self time];
+//    }
+//    return 0;
 }
 
 - (id)initWithCoder:(NSCoder *)coder {
@@ -67,6 +68,9 @@ static NSString * const kEndDateKey = @"kEndDateKey";
     if (self) {
         _startDate = [coder decodeObjectForKey:kStartDateKey];
         _endDate = [coder decodeObjectForKey:kEndDateKey];
+        if (!_endDate) {
+            _endDate = _startDate;
+        }
     }
     return self;
 }

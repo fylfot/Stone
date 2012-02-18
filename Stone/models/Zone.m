@@ -83,8 +83,9 @@ static NSMutableArray *__availableZones = nil;
         interval = period.rawInterval;
     }
     
+    //NSLog(@">>> %ld", interval);
     self.summaryIntervalToday = interval;
-    [[NSNotificationCenter defaultCenter] postNotificationName:kZoneNameChanged object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kZoneNameChanged object:self];
 }
 
 - (id)initWithCoder:(NSCoder *)coder {
@@ -116,6 +117,7 @@ static NSMutableArray *__availableZones = nil;
 
 + (void)addNewZone {
     [[[Zone alloc] init] _registrate];
+    [self saveApplicationData]; // Sometimes crashes
 }
 
 - (void)_registrate {
@@ -136,6 +138,7 @@ static NSMutableArray *__availableZones = nil;
 }
 
 - (void)startPeriod {
+    [self stopPeriod];
     _currentPeriod = [[TimePeriod alloc] init];
     [self.currentPeriod start];
     [self.periods addObject:self.currentPeriod];

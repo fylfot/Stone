@@ -77,7 +77,7 @@ static NSString * const kReportDayViewDateFormat = @"EEEE (dd/MM/yyyy)";
         ReportPeriodView *periodView = [[ReportPeriodView alloc] initWithColor:period.zone.color];
         periodView.autoresizingMask = NSViewHeightSizable;
         periodView.period = period;
-        [periodView.label setTitleWithMnemonic:[period.zone description]];
+        [periodView.label setTitleWithMnemonic:[NSString stringWithFormat:@"(%@) %@", FormatInterval([period time], YES), [period.zone description]]];
         [self.periodViews addObject:periodView];
         [self addSubview:periodView];
     }
@@ -100,7 +100,7 @@ static NSString * const kReportDayViewDateFormat = @"EEEE (dd/MM/yyyy)";
             w = 1;
         }
         
-        periodView.frame = NSMakeRect(x, 2, w, self.frame.size.height - 4);
+        periodView.frame = NSMakeRect(x, 2, (NSInteger)w, self.frame.size.height - 4);
     }
     
     [super layout];

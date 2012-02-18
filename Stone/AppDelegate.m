@@ -136,10 +136,14 @@
 }
 
 - (void)startStone:(NSMenuItem *)menuItem {
+    Zone *selectedStone = [[Zone availableZones] objectAtIndex:menuItem.tag];
+    if (self.currentStone == selectedStone) {
+        return;
+    }
     _startDate = [NSDate date];
     [self _stopStone];
     _timer = [NSTimer scheduledTimerWithTimeInterval:0.5f target:self selector:@selector(_makeATickUpdate:) userInfo:nil repeats:YES];
-    _currentStone = [[Zone availableZones] objectAtIndex:menuItem.tag];
+    _currentStone = selectedStone;
     [self.currentStone startPeriod];
     [self _makeATickUpdate:nil];
     self.stopStoneItem.action = @selector(_stopStone);

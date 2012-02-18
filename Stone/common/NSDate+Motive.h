@@ -29,6 +29,8 @@
 // Is this date today?
 - (BOOL)isToday;
 
+- (BOOL)isTodayViaIntervals;
+
 // Is this date later than the |other| date?
 - (BOOL)laterThan:(NSDate *)other;
 

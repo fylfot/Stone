@@ -52,6 +52,10 @@
     return [NSDate fromString:[NSString stringWithFormat:@"%@ 11:59:59", [self stringWithFormat:@"yyyy-MM-dd"]]];
 }
 
+- (BOOL)isTodayViaIntervals {
+    return ABS([[[NSDate date] startOfDay] timeIntervalSinceDate:self]) > kSecondsInDay;
+}
+
 - (BOOL)isToday {
     return [[self startOfDay] isEqual:[[NSDate date] startOfDay]];
 }
