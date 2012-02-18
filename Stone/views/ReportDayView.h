@@ -11,7 +11,9 @@
 @interface ReportDayView : NSView
 
 @property (nonatomic, strong, readonly) NSTextField *label;
+@property (nonatomic, strong, readonly) NSDate *date;
+@property (nonatomic, strong) NSArray *zonePeriods;
 
-- (id)initWithLabel:(NSString *)label;
+- (id)initWithDate:(NSDate *)date;
 
 @end

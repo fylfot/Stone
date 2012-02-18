@@ -9,6 +9,9 @@
 #ifndef Stone_Constants_h
 #define Stone_Constants_h
 
+static const CGFloat kColorBrightLimit = 0.4f;
+static const NSInteger kSecondsInDay = 86400;
+
 static NSString * const kReportsString = @"Reports";
 static NSString * const kPreferencesString = @"Preferences";
 static NSString * const kQuitString = @"Quit";
@@ -21,6 +24,7 @@ static NSString * const kInmutableException = @"Inmutable object exception";
 static NSString * const kStopString = @"Stop Stone";
 
 static NSString * const kZoneNameChanged = @"kZoneNameChanged";
+static NSString * const kReportsNeedUpdate = @"kReportsNeedUpdate";
 
 #define FRAND() ((float) random()/RAND_MAX)
 

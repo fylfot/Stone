@@ -23,4 +23,6 @@
 + (void)loadApplicationData;
 + (void)saveApplicationData;
 
++ (NSArray *)periodsForDate:(NSDate *)date;
+
 @end

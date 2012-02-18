@@ -9,8 +9,6 @@
 #import "ZoneView.h"
 #import "Zone.h"
 
-const CGFloat kColorBrightLimit = 0.4;
-
 @interface ZoneView ()
 
 @property (nonatomic, strong, readonly) NSColor *backgroundColor;

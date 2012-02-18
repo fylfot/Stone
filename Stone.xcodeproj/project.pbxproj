@@ -22,6 +22,7 @@
 		6E83AF9214EEB6E600DB8962 /* ReportView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E83AF9114EEB6E600DB8962 /* ReportView.m */; };
 		6E83AF9514EEB78C00DB8962 /* ReportDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E83AF9414EEB78C00DB8962 /* ReportDayView.m */; };
 		6E83AF9714EEC66B00DB8962 /* report_gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E83AF9614EEC66B00DB8962 /* report_gradient.png */; };
+		6E83AF9A14EFD3F800DB8962 /* ReportPeriodView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E83AF9914EFD3F800DB8962 /* ReportPeriodView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,8 @@
 		6E83AF9314EEB78C00DB8962 /* ReportDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReportDayView.h; path = views/ReportDayView.h; sourceTree = "<group>"; };
 		6E83AF9414EEB78C00DB8962 /* ReportDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReportDayView.m; path = views/ReportDayView.m; sourceTree = "<group>"; };
 		6E83AF9614EEC66B00DB8962 /* report_gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = report_gradient.png; sourceTree = "<group>"; };
+		6E83AF9814EFD3F800DB8962 /* ReportPeriodView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReportPeriodView.h; path = views/ReportPeriodView.h; sourceTree = "<group>"; };
+		6E83AF9914EFD3F800DB8962 /* ReportPeriodView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReportPeriodView.m; path = views/ReportPeriodView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,8 @@
 				6E83AF6F14EE743F00DB8962 /* ZoneView.m */,
 				6E83AF9314EEB78C00DB8962 /* ReportDayView.h */,
 				6E83AF9414EEB78C00DB8962 /* ReportDayView.m */,
+				6E83AF9814EFD3F800DB8962 /* ReportPeriodView.h */,
+				6E83AF9914EFD3F800DB8962 /* ReportPeriodView.m */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 				6E83AF8F14EEB0A900DB8962 /* NSDate+Motive.m in Sources */,
 				6E83AF9214EEB6E600DB8962 /* ReportView.m in Sources */,
 				6E83AF9514EEB78C00DB8962 /* ReportDayView.m in Sources */,
+				6E83AF9A14EFD3F800DB8962 /* ReportPeriodView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

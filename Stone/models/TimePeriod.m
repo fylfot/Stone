@@ -8,6 +8,7 @@
 
 #import "TimePeriod.h"
 #import "NSDate+Motive.h"
+#import "Zone.h"
 
 static NSString * const kStartDateKey = @"kStartDateKey";
 static NSString * const kEndDateKey = @"kEndDateKey";
@@ -16,6 +17,7 @@ static NSString * const kEndDateKey = @"kEndDateKey";
 
 @synthesize startDate = _startDate;
 @synthesize endDate = _endDate;
+@synthesize zone = _zone;
 @synthesize rawInterval;
 
 + (TimePeriod *)createTimePeriod {
@@ -38,11 +40,26 @@ static NSString * const kEndDateKey = @"kEndDateKey";
     _endDate = [NSDate date];
 }
 
+- (BOOL)inDates:(NSDate *)dateBegin endDate:(NSDate *)dateEnd {
+    if ([self.startDate laterThan:dateBegin] && [self.startDate earlierThan:dateEnd]) {
+        return YES;
+    }
+    return NO;
+}
+
+- (NSInteger)intervalToBeginSinceDate:(NSDate *)date {
+    return [self.startDate timeIntervalSinceDate:date];
+}
+
+- (NSInteger)time {
+    return [self.endDate timeIntervalSinceDate:self.startDate];
+}
+
 - (NSInteger)rawInterval {
-    if (![_startDate isToday] && ![_endDate isToday]) {
+    if (![self.startDate isToday] && ![self.endDate isToday]) {
         return 0; // don't calculate another days for raw view
     }
-    return [_endDate timeIntervalSinceDate:_startDate];
+    return [self time];
 }
 
 - (id)initWithCoder:(NSCoder *)coder {

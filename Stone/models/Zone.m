@@ -8,6 +8,7 @@
 
 #import "Zone.h"
 #import "TimePeriod.h"
+#import "NSDate+Motive.h"
 
 static NSString * const kNameKey = @"kNameKey";
 static NSString * const kColorName = @"kColorName";
@@ -38,6 +39,21 @@ static NSMutableArray *__availableZones = nil;
         __availableZones = [[NSMutableArray alloc] init];
     }
     return __availableZones;
+}
+
++ (NSArray *)periodsForDate:(NSDate *)date {
+    NSDate *beginOfDate = [date startOfDay];
+    NSDate *endOfDate = [beginOfDate dateByAddingTimeInterval:kSecondsInDay - 1];
+    
+    NSMutableArray *periods = [[NSMutableArray alloc] init];
+    for (Zone *zone in [self _allZones]) {
+        for (TimePeriod *period in zone.periods) {
+            if ([period inDates:beginOfDate endDate:endOfDate]) {
+                [periods addObject:period];
+            }
+        }
+    }
+    return periods;
 }
 
 + (void)loadApplicationData {
@@ -77,6 +93,11 @@ static NSMutableArray *__availableZones = nil;
         _name = [coder decodeObjectForKey:kNameKey];
         _color = [coder decodeObjectForKey:kColorName];
         _periods = [coder decodeObjectForKey:kPeriodsName];
+        
+        for (TimePeriod *period in self.periods) {
+            period.zone = self;
+        }
+        
         _currentPeriod = nil;
         [self _calculateCaches];
     }
@@ -118,6 +139,7 @@ static NSMutableArray *__availableZones = nil;
     _currentPeriod = [[TimePeriod alloc] init];
     [self.currentPeriod start];
     [self.periods addObject:self.currentPeriod];
+    self.currentPeriod.zone = self;
 }
 
 - (void)stopPeriod {

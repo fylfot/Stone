@@ -10,14 +10,6 @@
 #import "Zone.h"
 #import "ReportDayView.h"
 
-static NSString * const kMondayString = @"Monday";
-static NSString * const kTuesdayString = @"Tuesday";
-static NSString * const kWednesdayString = @"Wednesday";
-static NSString * const kThursdayString = @"Thursday";
-static NSString * const kFridayString = @"Friday";
-static NSString * const kSaturdayString = @"Saturday";
-static NSString * const kSundayString = @"Sunday";
-
 static const NSInteger kNumberOfDaysInWeek = 7; // Lol
 
 @implementation ReportView
@@ -28,19 +20,21 @@ static const NSInteger kNumberOfDaysInWeek = 7; // Lol
 {
     self = [super initWithFrame:frame];
     if (self) {
+        
+        NSDate *today = [NSDate date];
         _dayViews = [NSArray arrayWithObjects:
-          [[ReportDayView alloc] initWithLabel:kMondayString],
-          [[ReportDayView alloc] initWithLabel:kTuesdayString],
-          [[ReportDayView alloc] initWithLabel:kWednesdayString],
-          [[ReportDayView alloc] initWithLabel:kThursdayString],
-          [[ReportDayView alloc] initWithLabel:kFridayString],
-          [[ReportDayView alloc] initWithLabel:kSaturdayString],
-          [[ReportDayView alloc] initWithLabel:kSundayString],
+          [[ReportDayView alloc] initWithDate:[today dateByAddingTimeInterval:-3 * kSecondsInDay]],
+          [[ReportDayView alloc] initWithDate:[today dateByAddingTimeInterval:-2 * kSecondsInDay]],
+          [[ReportDayView alloc] initWithDate:[today dateByAddingTimeInterval:-1 * kSecondsInDay]],
+          [[ReportDayView alloc] initWithDate:[today dateByAddingTimeInterval:0 * kSecondsInDay]],
+          [[ReportDayView alloc] initWithDate:[today dateByAddingTimeInterval:1 * kSecondsInDay]],
+          [[ReportDayView alloc] initWithDate:[today dateByAddingTimeInterval:2 * kSecondsInDay]],
+          [[ReportDayView alloc] initWithDate:[today dateByAddingTimeInterval:3 * kSecondsInDay]],
         nil];
         
         for (NSView *view in self.dayViews) {
             [self addSubview:view];
-            view.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;
+            view.autoresizingMask = NSViewHeightSizable;
         }
         
     }
@@ -57,10 +51,10 @@ static const NSInteger kNumberOfDaysInWeek = 7; // Lol
     }
     [super layout];
 }
-/*
-- (void)drawRect:(NSRect)dirtyRect
-{
-    // Drawing code here.
+
+- (void)drawRect:(NSRect)dirtyRect {
+    [[NSColor whiteColor] set];
+    NSRectFill(dirtyRect);
 }
-*/
+
 @end

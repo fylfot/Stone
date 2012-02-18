@@ -163,6 +163,7 @@
 - (void)openReports:(NSMenuItem *)menuItem {
     [self.reports.contentView setNeedsLayout:YES];
     [self.reports.contentView layoutSubtreeIfNeeded];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kReportsNeedUpdate object:nil];
     [self.reports makeKeyAndOrderFront:nil];
 }
 
