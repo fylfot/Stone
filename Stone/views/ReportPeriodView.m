@@ -9,6 +9,7 @@
 #import "ReportPeriodView.h"
 #import "TimePeriod.h"
 #import "Zone.h"
+#import "NSDate+Motive.h"
 
 @implementation ReportPeriodView
 
@@ -30,7 +31,7 @@
 }
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"%@: %@ - %@", self.period.zone.name, self.period.startDate, self.period.endDate];
+    return [NSString stringWithFormat:@"%@: %@ - %@", self.period.zone.name, [self.period.startDate stringWithFormat:@"HH:mm"], [self.period.endDate stringWithFormat:@"HH:mm"]];
 }
 
 @end
