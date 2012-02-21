@@ -57,6 +57,7 @@ static NSString * const kReportDayViewDateFormat = @"EEEE (dd/MM/yyyy)";
         [self _recalculatePeriods];
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_updatePeriods:) name:kReportsNeedUpdate object:nil];
+        
     }
     return self;
 }
@@ -77,7 +78,6 @@ static NSString * const kReportDayViewDateFormat = @"EEEE (dd/MM/yyyy)";
         ReportPeriodView *periodView = [[ReportPeriodView alloc] initWithColor:period.zone.color];
         periodView.autoresizingMask = NSViewHeightSizable;
         periodView.period = period;
-        [periodView.label setTitleWithMnemonic:[NSString stringWithFormat:@"(%@) %@", FormatInterval([period time], YES), [period.zone description]]];
         [self.periodViews addObject:periodView];
         [self addSubview:periodView];
     }
@@ -107,7 +107,22 @@ static NSString * const kReportDayViewDateFormat = @"EEEE (dd/MM/yyyy)";
 }
 
 - (void)drawRect:(NSRect)dirtyRect {
+    [NSGraphicsContext saveGraphicsState];
     [_gradientImage drawInRect:dirtyRect fromRect:NSZeroRect operation:NSCompositeCopy fraction:1];
+//    [super drawRect:dirtyRect];
+    [NSGraphicsContext restoreGraphicsState];
+}
+
+- (NSString *)infoForX:(CGFloat)x {
+    for (ReportPeriodView *periodView in self.periodViews) {
+        if (periodView.frame.origin.x > x || periodView.frame.size.width + periodView.frame.origin.x < x) {
+            continue;
+        } else {
+            return [periodView description];
+        }
+    }
+    
+    return nil;
 }
 
 @end

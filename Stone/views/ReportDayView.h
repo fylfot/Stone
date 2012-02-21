@@ -15,5 +15,6 @@
 @property (nonatomic, strong) NSArray *zonePeriods;
 
 - (id)initWithDate:(NSDate *)date;
+- (NSString *)infoForX:(CGFloat)x;
 
 @end

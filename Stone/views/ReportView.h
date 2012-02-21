@@ -11,5 +11,8 @@
 @interface ReportView : NSView
 
 @property (nonatomic, strong, readonly) NSArray *dayViews;
+@property (assign) NSInteger heightOfDayView;
+@property (assign) NSInteger baseOffset;
+@property (nonatomic, strong, readonly) NSTextField *informationView;
 
 @end

@@ -146,7 +146,7 @@
 											<string key="NSFrameSize">{438, 280}</string>
 											<reference key="NSSuperview" ref="173701882"/>
 											<reference key="NSWindow"/>
-											<reference key="NSNextKeyView" ref="834695564"/>
+											<reference key="NSNextKeyView" ref="225119326"/>
 											<string key="NSReuseIdentifierKey">_NS:1828</string>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSTableHeaderView" key="NSHeaderView" id="1005316673">
@@ -267,7 +267,6 @@
 									<string key="NSFrame">{{224, 17}, {15, 102}}</string>
 									<reference key="NSSuperview" ref="965829756"/>
 									<reference key="NSWindow"/>
-									<reference key="NSNextKeyView"/>
 									<string key="NSReuseIdentifierKey">_NS:1845</string>
 									<reference key="NSTarget" ref="965829756"/>
 									<string key="NSAction">_doScroller:</string>
@@ -306,7 +305,7 @@
 							<string key="NSFrame">{{20, 20}, {440, 298}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="225119326"/>
+							<reference key="NSNextKeyView" ref="173701882"/>
 							<string key="NSReuseIdentifierKey">_NS:1824</string>
 							<int key="NSsFlags">150034</int>
 							<reference key="NSVScroller" ref="834695564"/>
@@ -359,7 +358,7 @@
 				<int key="NSWindowStyleMask">15</int>
 				<int key="NSWindowBacking">2</int>
 				<string key="NSWindowRect">{{131, 159}, {480, 305}}</string>
-				<int key="NSWTFlags">611845120</int>
+				<int key="NSWTFlags">1685586944</int>
 				<string key="NSWindowTitle">Stone Reports</string>
 				<string key="NSWindowClass">NSWindow</string>
 				<nil key="NSViewClass"/>
@@ -374,7 +373,6 @@
 							<string key="NSFrameSize">{480, 305}</string>
 							<reference key="NSSuperview" ref="588637440"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:1192</string>
 							<string key="NSClassName">ReportView</string>
 						</object>

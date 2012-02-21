@@ -11,9 +11,9 @@
 @class TimePeriod;
 @interface ReportPeriodView : NSView
 
-@property (nonatomic, strong, readonly) NSTextField *label;
 @property (nonatomic, strong, readonly) NSColor *color;
 @property (nonatomic, strong) TimePeriod *period;
+
 - (id)initWithColor:(NSColor *)color;
 
 @end

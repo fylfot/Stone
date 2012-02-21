@@ -120,6 +120,9 @@
     for (NSInteger i = 0; i < [zones count]; i++) {
         zone = [zones objectAtIndex:i];
         menuItem = [self.menu insertItemWithTitle:[zone description] action:@selector(startStone:) keyEquivalent:@"" atIndex:i];
+        if (zone == _currentStone) {
+            menuItem.image = self.systemTray.image;
+        }
         menuItem.tag = i;
         [menuItem setTarget:self];
     }
@@ -147,6 +150,7 @@
     [self.currentStone startPeriod];
     [self _makeATickUpdate:nil];
     self.stopStoneItem.action = @selector(_stopStone);
+    [self _recompileMenuItems];
 }
 
 - (void)_stopStone {
@@ -156,7 +160,9 @@
     if (self.currentStone) {
         [self.currentStone stopPeriod];
     }
+    _currentStone = nil;
     self.stopStoneItem.action = nil;
+    [self _recompileMenuItems];
 }
 
 - (void)_makeATickUpdate:(id)sender {
@@ -168,11 +174,12 @@
     [self.reports.contentView setNeedsLayout:YES];
     [self.reports.contentView layoutSubtreeIfNeeded];
     [[NSNotificationCenter defaultCenter] postNotificationName:kReportsNeedUpdate object:nil];
-    [self.reports makeKeyAndOrderFront:nil];
+//    [self.reports makeKeyAndOrderFront:nil];
+    [self.reports orderFrontRegardless];
 }
 
 - (void)openPreferences:(NSMenuItem *)menuItem {
-    [self.window makeKeyAndOrderFront:nil];
+    [self.window orderFrontRegardless];//makeKeyAndOrderFront:nil];
 }
 
 - (void)killApplication:(NSMenuItem *)menuItem {
