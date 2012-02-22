@@ -11,6 +11,8 @@
 
 static const CGFloat kColorBrightLimit = 0.4f;
 static const NSInteger kSecondsInDay = 86400;
+static const NSInteger kSecondsInWorkDay = 43200; // 8AM - 8PM, 12h
+static const NSInteger kLengthOf8HoursInSeconds = 28800; // 8h
 
 static NSString * const kReportsString = @"Reports";
 static NSString * const kPreferencesString = @"Preferences";

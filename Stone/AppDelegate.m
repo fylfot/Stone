@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "Zone.h"
 #import "ZoneView.h"
+//#import <QuartzCore/QuartzCore.h>
 
 @interface AppDelegate ()
 
@@ -18,6 +19,7 @@
 @property (nonatomic, strong, readonly) NSDate *startDate;
 @property (nonatomic, strong, readonly) NSTimer *timer;
 @property (nonatomic, strong, readonly) NSMenuItem *stopStoneItem;
+@property (nonatomic, strong, readonly) NSImage *trayIcon;
 
 - (void)_reloadData;
 - (void)_stopStone;
@@ -36,6 +38,25 @@
 @synthesize startDate = _startDate;
 @synthesize timer = _timer;
 @synthesize stopStoneItem = _stopStoneItem;
+@synthesize trayIcon = _trayIcon;
+
+// http://www.cocoabuilder.com/archive/cocoa/64546-example-how-to-tint-an-image.html
++ (NSImage *)_coloredImage:(NSImage *)image color:(NSColor *)color {
+    if (color) {
+        NSImage *icon = [image copy];
+        NSSize iconSize = [icon size];
+        NSRect iconRect = { NSZeroPoint, iconSize };
+        
+        [icon lockFocus];
+        [[color colorWithAlphaComponent:0.8f] set];
+        NSRectFillUsingOperation(iconRect, NSCompositeSourceAtop);
+        [icon unlockFocus];
+        
+        return icon;
+    } else {
+        return image;
+    }
+}
 
 - (void)_createTrayBar  {
     NSZone *menuZone = [NSMenu menuZone];
@@ -61,7 +82,8 @@
     self.systemTray.menu = self.menu;
     self.systemTray.highlightMode = YES;
     self.systemTray.toolTip = kTooltipString;
-    self.systemTray.image = [NSImage imageNamed:kStoneImageName];
+    _trayIcon = [NSImage imageNamed:kStoneImageName];
+    self.systemTray.image = self.trayIcon;
 //    self.systemTray.target = self;
 //    self.systemTray.action = @selector(systemTrayClicked:);
     self.systemTray.alternateImage = [NSImage imageNamed:kStoneImageHighlightedName];
@@ -150,6 +172,7 @@
     [self.currentStone startPeriod];
     [self _makeATickUpdate:nil];
     self.stopStoneItem.action = @selector(_stopStone);
+    self.systemTray.image = [AppDelegate _coloredImage:self.trayIcon color:self.currentStone.color];
     [self _recompileMenuItems];
 }
 
@@ -162,6 +185,7 @@
     }
     _currentStone = nil;
     self.stopStoneItem.action = nil;
+    self.systemTray.image = self.trayIcon;
     [self _recompileMenuItems];
 }
 

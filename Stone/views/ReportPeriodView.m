@@ -31,7 +31,7 @@
 }
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"%@: %@ - %@", self.period.zone.name, [self.period.startDate stringWithFormat:@"HH:mm"], [self.period.endDate stringWithFormat:@"HH:mm"]];
+    return [NSString stringWithFormat:@"%@:\n %@ - %@", self.period.zone.name, [self.period.startDate stringWithFormat:@"HH:mm"], [self.period.endDate stringWithFormat:@"HH:mm"]];
 }
 
 @end

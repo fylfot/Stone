@@ -44,7 +44,7 @@ static NSString * const kReportDayViewDateFormat = @"EEEE (dd/MM/yyyy)";
     if (self) {
         _gradientImage = [NSImage imageNamed:kGradientImageName];
         _label = [[NSTextField alloc] initWithFrame:self.frame];
-        _date = [date startOfDay];
+        _date = [[date startOfDay] dateByAddingTimeInterval:kLengthOf8HoursInSeconds];
         NSString *dayLabel = [[self.date stringWithFormat:kReportDayViewDateFormat] capitalizedString];
         [self.label setTitleWithMnemonic:dayLabel];
         self.label.editable = NO;
@@ -90,7 +90,7 @@ static NSString * const kReportDayViewDateFormat = @"EEEE (dd/MM/yyyy)";
     self.label.font = [NSFont systemFontOfSize:((NSInteger)self.frame.size.height) / 2];
     self.label.frame = NSMakeRect(10, 10, self.frame.size.width - 20, self.frame.size.height - 20);
     
-    CGFloat secondToPixelSize = self.frame.size.width / (CGFloat)kSecondsInDay;
+    CGFloat secondToPixelSize = self.frame.size.width / (CGFloat)kSecondsInWorkDay;
     
     for (ReportPeriodView *periodView in self.periodViews) {
         CGFloat x = [periodView.period intervalToBeginSinceDate:self.date] * secondToPixelSize;
