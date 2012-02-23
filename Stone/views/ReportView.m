@@ -27,13 +27,13 @@ static const NSRect kInformationRect = {-200, -200, 192, 64};
         
         NSDate *today = [NSDate date];
         _dayViews = [NSArray arrayWithObjects:
+          [[ReportDayView alloc] initWithDate:[today dateByAddingTimeInterval:-6 * kSecondsInDay]],
+          [[ReportDayView alloc] initWithDate:[today dateByAddingTimeInterval:-5 * kSecondsInDay]],
+          [[ReportDayView alloc] initWithDate:[today dateByAddingTimeInterval:-4 * kSecondsInDay]],
           [[ReportDayView alloc] initWithDate:[today dateByAddingTimeInterval:-3 * kSecondsInDay]],
           [[ReportDayView alloc] initWithDate:[today dateByAddingTimeInterval:-2 * kSecondsInDay]],
           [[ReportDayView alloc] initWithDate:[today dateByAddingTimeInterval:-1 * kSecondsInDay]],
-          [[ReportDayView alloc] initWithDate:[today dateByAddingTimeInterval:0 * kSecondsInDay]],
-          [[ReportDayView alloc] initWithDate:[today dateByAddingTimeInterval:1 * kSecondsInDay]],
-          [[ReportDayView alloc] initWithDate:[today dateByAddingTimeInterval:2 * kSecondsInDay]],
-          [[ReportDayView alloc] initWithDate:[today dateByAddingTimeInterval:3 * kSecondsInDay]],
+          [[ReportDayView alloc] initWithDate:[today dateByAddingTimeInterval:-0 * kSecondsInDay]],
         nil];
         
         for (NSView *view in self.dayViews) {
