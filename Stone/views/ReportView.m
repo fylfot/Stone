@@ -19,6 +19,8 @@ static const NSRect kInformationRect = {-200, -200, 192, 64};
 @synthesize heightOfDayView = _heightOfDayView;
 @synthesize baseOffset = _baseOffset;
 @synthesize informationView = _informationView;
+@synthesize area = _area;
+@synthesize previousFrame = _previousFrame;
 
 - (id)initWithFrame:(NSRect)frame
 {
@@ -57,24 +59,30 @@ static const NSRect kInformationRect = {-200, -200, 192, 64};
     return self;
 }
 
-- (void)layout {
-    _heightOfDayView = self.frame.size.height / kNumberOfDaysInWeek;
-    _baseOffset = self.frame.size.height - kNumberOfDaysInWeek * _heightOfDayView;
-    
-    for (NSInteger i = 0; i < kNumberOfDaysInWeek; i++) {
-        ((NSView *)[self.dayViews objectAtIndex:i]).frame = NSMakeRect(0, _baseOffset + _heightOfDayView * (kNumberOfDaysInWeek - i - 1), self.frame.size.width, _heightOfDayView);
+// WARNING! Private method _updateTrackingAreas exist!
+- (void)_myUpdateTrackingAreas {
+    if (self.area) {
+        [self removeTrackingArea:self.area];
     }
-    [super layout];
-}
-
-- (void)viewDidMoveToWindow {
-    
-    NSTrackingArea *area = [[NSTrackingArea alloc] initWithRect:self.bounds 
+    _area = [[NSTrackingArea alloc] initWithRect:self.frame 
                                                         options:NSTrackingMouseMoved + NSTrackingActiveInKeyWindow
                                                           owner:self
                                                        userInfo:nil];
-    
-    [self addTrackingArea:area];
+    [self addTrackingArea:self.area];
+}
+
+- (void)layout {
+    if (_previousFrame.size.width != self.frame.size.width || _previousFrame.size.height != self.frame.size.height) {
+        _previousFrame = self.frame;
+        _heightOfDayView = self.frame.size.height / kNumberOfDaysInWeek;
+        _baseOffset = self.frame.size.height - kNumberOfDaysInWeek * _heightOfDayView;
+        
+        for (NSInteger i = 0; i < kNumberOfDaysInWeek; i++) {
+            ((NSView *)[self.dayViews objectAtIndex:i]).frame = NSMakeRect(0, _baseOffset + _heightOfDayView * (kNumberOfDaysInWeek - i - 1), self.frame.size.width, _heightOfDayView);
+        }
+        [self _myUpdateTrackingAreas];
+    }
+    [super layout];
 }
 
 - (void)_updateInformationPanel:(NSString *)information atPosition:(CGPoint)point {

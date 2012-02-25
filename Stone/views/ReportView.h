@@ -14,5 +14,7 @@
 @property (assign) NSInteger heightOfDayView;
 @property (assign) NSInteger baseOffset;
 @property (nonatomic, strong, readonly) NSTextField *informationView;
+@property (nonatomic, strong, readonly) NSTrackingArea *area;
+@property (assign) NSRect previousFrame;
 
 @end
