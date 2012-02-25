@@ -107,10 +107,10 @@ static NSString * const kReportDayViewDateFormat = @"EEEE (dd/MM/yyyy)";
 }
 
 - (void)drawRect:(NSRect)dirtyRect {
-    [NSGraphicsContext saveGraphicsState];
-    [_gradientImage drawInRect:dirtyRect fromRect:NSZeroRect operation:NSCompositeCopy fraction:1];
+//    [NSGraphicsContext saveGraphicsState];
+    [_gradientImage drawInRect:self.bounds fromRect:NSZeroRect operation:NSCompositeCopy fraction:1];
 //    [super drawRect:dirtyRect];
-    [NSGraphicsContext restoreGraphicsState];
+//    [NSGraphicsContext restoreGraphicsState];
 }
 
 - (NSString *)infoForX:(CGFloat)x {
