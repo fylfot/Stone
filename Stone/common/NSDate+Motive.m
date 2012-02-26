@@ -1,6 +1,6 @@
 #import "NSDate+Motive.h"
 
-@implementation NSDate (MotiveExtensions)
+@implementation NSDate (Motive)
 
 + (NSDate *)fromString:(NSString *)dateString {
     return [self fromString:dateString withFormat:@"yyyy-MM-dd HH:mm:ss"];
@@ -53,7 +53,11 @@
 }
 
 - (BOOL)isTodayViaIntervals {
-    return ABS([[[NSDate date] startOfDay] timeIntervalSinceDate:self]) > kSecondsInDay;
+    NSTimeInterval i = [[[NSDate date] startOfDay] timeIntervalSinceDate:self];
+    if (i < 0) {
+        i *= -1;
+    }
+    return i > kSecondsInDay;
 }
 
 - (BOOL)isToday {

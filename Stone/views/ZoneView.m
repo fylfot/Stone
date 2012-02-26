@@ -41,6 +41,28 @@
     
     return self;
 }
+- (BOOL)control:(NSControl *)control textShouldBeginEditing:(NSText *)fieldEditor {
+    return YES;
+}
+- (BOOL)control:(NSControl *)control textShouldEndEditing:(NSText *)fieldEditor {
+    return YES;
+}
+- (BOOL)control:(NSControl *)control didFailToFormatString:(NSString *)string errorDescription:(NSString *)error {
+    return  YES;
+}
+- (void)control:(NSControl *)control didFailToValidatePartialString:(NSString *)string errorDescription:(NSString *)error{
+    NSLog(@"test");
+}
+- (BOOL)control:(NSControl *)control isValidObject:(id)obj {
+    return YES;
+}
+
+- (BOOL)control:(NSControl *)control textView:(NSTextView *)textView doCommandBySelector:(SEL)commandSelector {
+    return YES;
+}
+- (NSArray *)control:(NSControl *)control textView:(NSTextView *)textView completions:(NSArray *)words forPartialWordRange:(NSRange)charRange indexOfSelectedItem:(NSInteger *)index {
+    return nil;
+}
 
 - (void)controlTextDidBeginEditing:(NSNotification *)aNotification {
     if([aNotification object] == self.textField) {
@@ -57,7 +79,7 @@
 - (void)controlTextDidEndEditing:(NSNotification *)aNotification {
     if([aNotification object] == self.textField) {
         [self _updateColor];
-        [[NSNotificationCenter defaultCenter] postNotificationName:kZoneNameChanged object:self.zone];
+        [(NSNotificationCenter *)[NSNotificationCenter defaultCenter] postNotificationName:kZoneNameChanged object:self.zone];
     }
 }
 

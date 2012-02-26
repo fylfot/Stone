@@ -11,7 +11,7 @@
 #import "ReportDayView.h"
 
 static const NSInteger kNumberOfDaysInWeek = 7; // Lol
-static const NSRect kInformationRect = {-200, -200, 192, 64};
+static const NSRect kInformationRect = {{-200, -200}, {192, 64}};
 
 @implementation ReportView
 
@@ -60,7 +60,7 @@ static const NSRect kInformationRect = {-200, -200, 192, 64};
 }
 
 // WARNING! Private method _updateTrackingAreas exist!
-- (void)_myUpdateTrackingAreas {
+- (void)_myUpdateTrackingArea {
     if (self.area) {
         [self removeTrackingArea:self.area];
     }
@@ -74,13 +74,13 @@ static const NSRect kInformationRect = {-200, -200, 192, 64};
 - (void)layout {
     if (_previousFrame.size.width != self.frame.size.width || _previousFrame.size.height != self.frame.size.height) {
         _previousFrame = self.frame;
-        _heightOfDayView = self.frame.size.height / kNumberOfDaysInWeek;
-        _baseOffset = self.frame.size.height - kNumberOfDaysInWeek * _heightOfDayView;
+        _heightOfDayView = (NSInteger)(self.frame.size.height / kNumberOfDaysInWeek);
+        _baseOffset = (NSInteger)(self.frame.size.height - kNumberOfDaysInWeek * _heightOfDayView);
         
         for (NSInteger i = 0; i < kNumberOfDaysInWeek; i++) {
             ((NSView *)[self.dayViews objectAtIndex:i]).frame = NSMakeRect(0, _baseOffset + _heightOfDayView * (kNumberOfDaysInWeek - i - 1), self.frame.size.width, _heightOfDayView);
         }
-        [self _myUpdateTrackingAreas];
+        [self _myUpdateTrackingArea];
     }
     [super layout];
 }
@@ -99,7 +99,7 @@ static const NSRect kInformationRect = {-200, -200, 192, 64};
 
 - (void)mouseMoved:(NSEvent *)theEvent {
     CGPoint l = [theEvent locationInWindow];
-    NSInteger i = l.y / _heightOfDayView;
+    NSInteger i = (NSInteger)(l.y / _heightOfDayView);
     if (i >= 0 && i < kNumberOfDaysInWeek) {
         NSString *info = [[self.dayViews objectAtIndex:kNumberOfDaysInWeek - i - 1] infoForX:l.x];
         if (info) {

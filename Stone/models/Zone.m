@@ -85,7 +85,7 @@ static NSMutableArray *__availableZones = nil;
     
     //NSLog(@">>> %ld", interval);
     self.summaryIntervalToday = interval;
-    [[NSNotificationCenter defaultCenter] postNotificationName:kZoneNameChanged object:self];
+    [(NSNotificationCenter *)[NSNotificationCenter defaultCenter] postNotificationName:kZoneNameChanged object:self];
 }
 
 - (id)initWithCoder:(NSCoder *)coder {

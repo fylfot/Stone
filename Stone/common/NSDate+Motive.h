@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@interface NSDate (MotiveExtensions)
+@interface NSDate (Motive)
 
 // String format is: yyyy-MM-dd HH:mm:ss
 + (NSDate *)fromString:(NSString *)dateString;

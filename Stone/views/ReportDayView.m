@@ -56,7 +56,7 @@ static NSString * const kReportDayViewDateFormat = @"EEEE (dd/MM/yyyy)";
         self.label.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;
         [self _recalculatePeriods];
         
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_updatePeriods:) name:kReportsNeedUpdate object:nil];
+        [(NSNotificationCenter *)[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_updatePeriods:) name:kReportsNeedUpdate object:nil];
         
     }
     return self;

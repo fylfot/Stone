@@ -32,7 +32,7 @@ static NSString * const kReportsNeedUpdate = @"kReportsNeedUpdate";
 
 static NSString *FormatInterval(NSTimeInterval interval, BOOL isShort) {
     
-    NSInteger numSeconds = interval;
+    NSInteger numSeconds = (NSInteger)interval;
     NSInteger days = numSeconds / (60 * 60 * 24);
     numSeconds -= days * (60 * 60 * 24);
     NSInteger hours = numSeconds / (60 * 60);

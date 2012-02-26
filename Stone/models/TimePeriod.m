@@ -48,11 +48,11 @@ static NSString * const kEndDateKey = @"kEndDateKey";
 }
 
 - (NSInteger)intervalToBeginSinceDate:(NSDate *)date {
-    return [self.startDate timeIntervalSinceDate:date];
+    return (NSInteger)[self.startDate timeIntervalSinceDate:date];
 }
 
 - (NSInteger)time {
-    return [self.endDate timeIntervalSinceDate:self.startDate];
+    return (NSInteger)[self.endDate timeIntervalSinceDate:self.startDate];
 }
 
 - (NSInteger)rawInterval {

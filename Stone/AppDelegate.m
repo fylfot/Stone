@@ -24,6 +24,7 @@
 - (void)_reloadData;
 - (void)_stopStone;
 - (void)_makeATickUpdate:(id)sender;
+- (void)_didChangeNameOfZone:(NSNotification *)notification;
 
 @end
 
@@ -93,7 +94,7 @@
     [Zone loadApplicationData];
     
     srandom((unsigned int)time(NULL));
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_didChangeNameOfZone:) name:kZoneNameChanged object:nil];    
+    [(NSNotificationCenter *)[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_didChangeNameOfZone:) name:kZoneNameChanged object:nil];    
 
     [self _createTrayBar];
     
@@ -197,7 +198,7 @@
 - (void)openReports:(NSMenuItem *)menuItem {
     [self.reports.contentView setNeedsLayout:YES];
     [self.reports.contentView layoutSubtreeIfNeeded];
-    [[NSNotificationCenter defaultCenter] postNotificationName:kReportsNeedUpdate object:nil];
+    [(NSNotificationCenter *)[NSNotificationCenter defaultCenter] postNotificationName:kReportsNeedUpdate object:nil];
 //    [self.reports makeKeyAndOrderFront:nil];
     [self.reports orderFrontRegardless];
 }

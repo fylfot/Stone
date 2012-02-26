@@ -15,6 +15,10 @@
 
 @property (nonatomic, strong) IBOutlet NSTableView *tableView;
 
+- (void)startStone:(NSMenuItem *)menuItem;
 - (IBAction)addNewZone:(NSButton *)button;
+- (void)openReports:(NSMenuItem *)menuItem;
+- (void)openPreferences:(NSMenuItem *)menuItem;
+- (void)killApplication:(NSMenuItem *)menuItem;
 
 @end
