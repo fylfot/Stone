@@ -90,7 +90,7 @@
     self.systemTray.alternateImage = [NSImage imageNamed:kStoneImageHighlightedName];
 }
 
-- (void)_macosGoingToSleep:(NSNotification *)notification {
+- (void)_stonesShouldStop:(NSNotification *)notification {
     [self _stopStone];
 }
 
@@ -104,9 +104,14 @@
     
     [self _reloadData];
     
-    [[[NSWorkspace sharedWorkspace] notificationCenter] addObserver: self 
-                                                           selector: @selector(_macosGoingToSleep:) 
-                                                               name: NSWorkspaceWillSleepNotification object: NULL];
+    
+    // Application should stop stone if user not working
+    NSNotificationCenter *nc = [[NSWorkspace sharedWorkspace] notificationCenter];
+    
+    [nc addObserver:self selector: @selector(_stonesShouldStop:) name:NSWorkspaceWillPowerOffNotification object:nil];
+    [nc addObserver:self selector: @selector(_stonesShouldStop:) name:NSWorkspaceWillSleepNotification object:nil];
+    [nc addObserver:self selector: @selector(_stonesShouldStop:) name:NSWorkspaceSessionDidResignActiveNotification object:nil];
+    [nc addObserver:self selector: @selector(_stonesShouldStop:) name:NSWorkspaceScreensDidSleepNotification object:nil];
 
 }
 

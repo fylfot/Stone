@@ -13,7 +13,8 @@
 static NSString * const kNameKey = @"kNameKey";
 static NSString * const kColorName = @"kColorName";
 static NSString * const kPeriodsName = @"kPeriodsName";
-static const CGFloat kMinimalShowValue = 300;
+static NSString * const kDocumentFileName = @"stones.dat";
+
 
 @interface Zone ()
 
@@ -59,19 +60,26 @@ static NSMutableArray *__availableZones = nil;
 + (void)loadApplicationData {
     
     // COPY & PASTE!
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString *applicationDataFilePath = [documentsDirectory stringByAppendingPathComponent:@"stones.dat"];
+    NSString *applicationDirPath = [documentsDirectory stringByAppendingPathComponent:kApplicationName];
+    NSString *applicationDataFilePath = [applicationDirPath stringByAppendingPathComponent:kDocumentFileName];
+    if (![[NSFileManager defaultManager] isReadableFileAtPath:applicationDataFilePath]) {
+        [[NSFileManager defaultManager] createDirectoryAtPath:applicationDirPath withIntermediateDirectories:YES attributes:nil error:nil];
+        [[NSFileManager defaultManager] createFileAtPath:applicationDataFilePath contents:[NSData data] attributes:nil];
+        __availableZones = [NSMutableArray array];
+    } else {
     
-    NSArray *root = [NSKeyedUnarchiver unarchiveObjectWithFile:applicationDataFilePath];
+        NSArray *root = [NSKeyedUnarchiver unarchiveObjectWithFile:applicationDataFilePath];
     
-    __availableZones = [NSMutableArray arrayWithArray:[root objectAtIndex:0]];
+        __availableZones = [NSMutableArray arrayWithArray:[root objectAtIndex:0]];
+    }
 }
 
 + (void)saveApplicationData {
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString *applicationDataFilePath = [documentsDirectory stringByAppendingPathComponent:@"stones.dat"];
+    NSString *applicationDataFilePath = [[documentsDirectory  stringByAppendingPathComponent:kApplicationName] stringByAppendingPathComponent:kDocumentFileName];
     
     [NSKeyedArchiver archiveRootObject:[NSArray arrayWithObject:__availableZones] toFile:applicationDataFilePath];
 }
@@ -152,11 +160,7 @@ static NSMutableArray *__availableZones = nil;
 }
 
 - (NSString *)description {
-    if (self.summaryIntervalToday < kMinimalShowValue) {
-        return self.name;
-    } else {
-        return [NSString stringWithFormat:@"(%@) %@", FormatInterval(self.summaryIntervalToday, YES), self.name];
-    }
+    return self.name;
 }
 
 

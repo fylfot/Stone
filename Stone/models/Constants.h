@@ -9,6 +9,8 @@
 #ifndef Stone_Constants_h
 #define Stone_Constants_h
 
+static NSString * const kApplicationName = @"Stone";
+
 static const CGFloat kColorBrightLimit = 0.4f;
 static const NSInteger kSecondsInDay = 86400;
 static const NSInteger kSecondsInWorkDay = 43200; // 8AM - 8PM, 12h
