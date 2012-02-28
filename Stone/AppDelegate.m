@@ -90,6 +90,10 @@
     self.systemTray.alternateImage = [NSImage imageNamed:kStoneImageHighlightedName];
 }
 
+- (void)_macosGoingToSleep:(NSNotification *)notification {
+    [self _stopStone];
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     [Zone loadApplicationData];
     
@@ -99,6 +103,11 @@
     [self _createTrayBar];
     
     [self _reloadData];
+    
+    [[[NSWorkspace sharedWorkspace] notificationCenter] addObserver: self 
+                                                           selector: @selector(_macosGoingToSleep:) 
+                                                               name: NSWorkspaceWillSleepNotification object: NULL];
+
 }
 
 - (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
