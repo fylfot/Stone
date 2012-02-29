@@ -30,22 +30,15 @@
     if (self) {
         _textField = [[NSTextField alloc] initWithFrame:self.bounds];
         self.textField.bezeled = NO;
-        self.textField.drawsBackground = NO;
+        self.textField.drawsBackground = YES;
         self.textField.delegate = self;
         self.textField.selectable = NO;
         self.textField.editable = YES;
         self.textField.autoresizingMask =  NSViewWidthSizable | NSViewHeightSizable;
         [self addSubview:_textField];
-        // Initialization code here.
     }
     
     return self;
-}
-
-- (void)controlTextDidBeginEditing:(NSNotification *)aNotification {
-    if([aNotification object] == self.textField) {
-        self.textField.textColor = [NSColor blackColor];
-    }
 }
 
 - (void)controlTextDidChange:(NSNotification *)aNotification {
@@ -61,11 +54,6 @@
     }
 }
 
-- (void)drawRect:(NSRect)dirtyRect {
-    [self.backgroundColor setFill];
-    NSRectFill(dirtyRect);
-}
-
 - (void)_updateColor {
     CGFloat f;
     [self.backgroundColor getHue:nil saturation:&f brightness:nil alpha:nil];
@@ -74,6 +62,7 @@
     } else {
         self.textField.textColor = [NSColor blackColor];
     }
+    self.textField.backgroundColor = _backgroundColor;
 }
 
 - (void)_setColor:(NSColor *)color {
