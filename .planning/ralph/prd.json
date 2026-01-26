@@ -1,0 +1,81 @@
+{
+  "name": "Stone v1.0",
+  "description": "Stone's roadmap follows a dependency-driven path from foundation to polish. Phase 1 establishes the app architecture and core time tracking with accurate timer behavior across sleep/wake cycles. Phase 2 builds project organization features (folders, tags, colors) on the stable foundation. Phase 3 adds reporting and visualization once time data exists. Phase 4 integrates CloudKit sync after the data model is proven stable. Phase 5 adds final polish and convenience features.",
+  "branchName": "master",
+  "userStories": [
+    {
+      "id": "story-1",
+      "title": "Phase 1: Foundation + Core Tracking",
+      "description": "User can track time for projects with accurate timer that persists across sleep/wake cycles and app restarts.",
+      "acceptanceCriteria": [
+        "User can start a timer for a project from menu bar with one click",
+        "User can see elapsed time updating in menu bar while timer runs",
+        "User can stop timer and time entry is saved permanently",
+        "Timer automatically pauses when Mac sleeps and resumes on wake without drift",
+        "User can switch between projects and previous timer auto-stops",
+        "User can manually add time entries for retroactive logging",
+        "User can edit existing time entries",
+        "User is prompted after idle periods with option to keep or discard idle time",
+        "All time data persists across app restarts"
+      ],
+      "passes": true
+    },
+    {
+      "id": "story-2",
+      "title": "Phase 2: Project Organization",
+      "description": "User can organize projects into folders with tags and colors for easy visual identification and filtering.",
+      "acceptanceCriteria": [
+        "User can create new projects with names and colors",
+        "User can edit project names inline",
+        "User can delete projects with confirmation dialog",
+        "User can organize projects into folders (hierarchical structure)",
+        "User can create, edit, and delete folders",
+        "User can add multiple tags to projects",
+        "User can filter project list by tag",
+        "User can reorder projects within folders via drag-and-drop",
+        "User can open Preferences window to manage projects"
+      ],
+      "passes": false
+    },
+    {
+      "id": "story-3",
+      "title": "Phase 3: Reporting",
+      "description": "User can view time summaries, visualize time distribution, and export data for external use.",
+      "acceptanceCriteria": [
+        "User can view daily time summary showing hours per project",
+        "User can view weekly and monthly time summaries",
+        "User can see searchable list of all time entries",
+        "User can view pie chart of time distribution by project",
+        "User can view bar chart of time by day/week",
+        "User can export time data to CSV format",
+        "User can open Reports window from menu bar"
+      ],
+      "passes": false
+    },
+    {
+      "id": "story-4",
+      "title": "Phase 4: CloudKit Sync",
+      "description": "User's data syncs automatically across all their Macs via iCloud with visible sync status.",
+      "acceptanceCriteria": [
+        "Time entries and projects sync automatically to iCloud",
+        "User can see sync status indicator showing sync progress/errors",
+        "Changes on one Mac appear on other Macs within minutes",
+        "Conflicts from concurrent edits are resolved automatically without data loss",
+        "User sees warning before iCloud account changes that might affect data"
+      ],
+      "passes": false
+    },
+    {
+      "id": "story-5",
+      "title": "Phase 5: Polish",
+      "description": "App feels native and polished with convenience features like launch at login.",
+      "acceptanceCriteria": [
+        "User can enable \"Launch at Login\" in preferences",
+        "App automatically launches at login when enabled",
+        "Menu bar icon renders correctly in both light and dark mode",
+        "No memory leaks detected via Instruments profiling"
+      ],
+      "passes": false
+    }
+  ]
+}

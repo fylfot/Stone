@@ -1,0 +1,942 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.xctest/Contents/MacOS/StonePackageTests",
+      "packagePath" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2",
+      "productName" : "StonePackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.Stone-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/sources",
+      "importPath" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/App/AppDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/App/StoneApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Models/Project.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Models/TimeEntry.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/SystemEventService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/TimeTrackerService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/Color+Hex.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/Date+Extensions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/TimeInterval+Formatting.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/MenuBarViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/TimeEntryViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/MenuBar/MenuBarView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/TimeEntry/TimeEntryListView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "Stone",
+      "moduleOutputPath" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Modules/Stone.swiftmodule",
+      "objects" : [
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/AppDelegate.swift.o",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/StoneApp.swift.o",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Project.swift.o",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntry.swift.o",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/SystemEventService.swift.o",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeTrackerService.swift.o",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Color+Hex.swift.o",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Date+Extensions.swift.o",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeInterval+Formatting.swift.o",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarViewModel.swift.o",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryViewModel.swift.o",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarView.swift.o",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryListView.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "Stone_main",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "stone2"
+      ],
+      "outputFileMapPath" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/AppDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/StoneApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Project.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntry.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/SystemEventService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeTrackerService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Color+Hex.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Date+Extensions.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeInterval+Formatting.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryListView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Modules/Stone.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/App/AppDelegate.swift",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/App/StoneApp.swift",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Models/Project.swift",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Models/TimeEntry.swift",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/SystemEventService.swift",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/TimeTrackerService.swift",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/Color+Hex.swift",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/Date+Extensions.swift",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/TimeInterval+Formatting.swift",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/MenuBarViewModel.swift",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/TimeEntryViewModel.swift",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/MenuBar/MenuBarView.swift",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/TimeEntry/TimeEntryListView.swift"
+      ],
+      "tempsPath" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.StonePackageTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.build/sources",
+      "importPath" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Modules/StoneTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "StonePackageTests",
+      "moduleOutputPath" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Modules/StonePackageTests.swiftmodule",
+      "objects" : [
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.build/include/StonePackageTests-Swift.h",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "stone2"
+      ],
+      "outputFileMapPath" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Modules/StonePackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.StoneTests-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StoneTests.build/sources",
+      "importPath" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Tests/StoneTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StoneTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "StoneTests",
+      "moduleOutputPath" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Modules/StoneTests.swiftmodule",
+      "objects" : [
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StoneTests.build/StoneTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "stone2"
+      ],
+      "outputFileMapPath" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StoneTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StoneTests.build/StoneTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Modules/StoneTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Tests/StoneTests.swift"
+      ],
+      "tempsPath" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StoneTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "Stone" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "Stone",
+      "-package-name",
+      "stone2",
+      "-c",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/App/AppDelegate.swift",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/App/StoneApp.swift",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Models/Project.swift",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Models/TimeEntry.swift",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/SystemEventService.swift",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/TimeTrackerService.swift",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/Color+Hex.swift",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/Date+Extensions.swift",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/TimeInterval+Formatting.swift",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/MenuBarViewModel.swift",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/TimeEntryViewModel.swift",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/MenuBar/MenuBarView.swift",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/TimeEntry/TimeEntryListView.swift",
+      "-I",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "Stone_main",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "stone2",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "StonePackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "StonePackageTests",
+      "-package-name",
+      "stone2",
+      "-c",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.derived/runner.swift",
+      "-I",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.build/include/StonePackageTests-Swift.h",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "stone2",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "StoneTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "StoneTests",
+      "-package-name",
+      "stone2",
+      "-c",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Tests/StoneTests.swift",
+      "-I",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "stone2",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "Stone" : [
+
+    ],
+    "StonePackageTests" : [
+      "StoneTests",
+      "Stone"
+    ],
+    "StoneTests" : [
+      "Stone"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone-entitlement.plist"
+    },
+    "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/App/AppDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/App/StoneApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Models/Project.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Models/TimeEntry.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/SystemEventService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/TimeTrackerService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/Color+Hex.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/Date+Extensions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/TimeInterval+Formatting.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/MenuBarViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/TimeEntryViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/MenuBar/MenuBarView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/TimeEntry/TimeEntryListView.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/sources"
+    },
+    "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/AppDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Color+Hex.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Date+Extensions.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Project.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/StoneApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/SystemEventService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntry.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryListView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeInterval+Formatting.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeTrackerService.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.product/Objects.LinkFileList"
+    },
+    "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.build/sources"
+    },
+    "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/AppDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Color+Hex.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Date+Extensions.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Project.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/StoneApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/SystemEventService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntry.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryListView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeInterval+Formatting.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeTrackerService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StoneTests.build/StoneTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StoneTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Tests/StoneTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StoneTests.build/sources"
+    },
+    "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

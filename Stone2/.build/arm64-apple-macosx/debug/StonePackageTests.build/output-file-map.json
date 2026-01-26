@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.build/master.swiftdeps"
+  },
+  "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.derived/runner.swift": {
+    "dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.build/runner.d",
+    "object": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/StonePackageTests.build/runner.dia"
+  }
+}

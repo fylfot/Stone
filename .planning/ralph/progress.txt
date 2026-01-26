@@ -1,0 +1,43 @@
+# Ralph Progress Log
+
+## Story 1: Phase 1 - Foundation + Core Tracking
+**Status:** COMPLETE
+**Date:** 2026-01-26
+
+### What was implemented:
+- Created new Swift/SwiftUI project structure in Stone2/ directory
+- Implemented SwiftData models: Project and TimeEntry
+- Created TimeTrackerService with start/stop/switch functionality
+- Built menu bar UI using AppKit NSStatusItem with SwiftUI popover
+- Implemented SystemEventService for sleep/wake detection
+- Added idle time detection with configurable threshold (5 min default)
+- Created TimeEntryListView for manual add/edit of time entries
+- SwiftData persists all data across app restarts
+
+### Key architectural decisions:
+1. Used SwiftData instead of Core Data for simpler API
+2. Used @Observable macro for view models (modern approach)
+3. AppKit NSStatusItem with SwiftUI hosting for menu bar (best compatibility)
+4. Timer uses Date-based calculations, not tick counting (prevents drift)
+5. ProcessInfo.beginActivity prevents App Nap throttling
+
+### Files created:
+- Stone2/App/StoneApp.swift - Main entry point
+- Stone2/App/AppDelegate.swift - Menu bar setup
+- Stone2/Models/Project.swift - SwiftData model
+- Stone2/Models/TimeEntry.swift - SwiftData model
+- Stone2/Services/TimeTrackerService.swift - Core timer logic
+- Stone2/Services/SystemEventService.swift - Sleep/wake/idle detection
+- Stone2/ViewModels/MenuBarViewModel.swift - Menu bar state
+- Stone2/ViewModels/TimeEntryViewModel.swift - Entry editing state
+- Stone2/Views/MenuBar/MenuBarView.swift - Menu bar UI
+- Stone2/Views/TimeEntry/TimeEntryListView.swift - Entry list/edit UI
+- Stone2/Utilities/TimeInterval+Formatting.swift - Duration formatting
+- Stone2/Utilities/Color+Hex.swift - Hex color conversion
+- Stone2/Utilities/Date+Extensions.swift - Date helpers
+- Stone2/Tests/StoneTests.swift - Unit tests
+
+### Lessons learned:
+- SwiftData @Model classes need to explicitly conform to Identifiable for ForEach
+- CGFloat arrays use subscript access [index], not .at(index)
+- TimeInterval formatting should use Int math (%) not Double truncatingRemainder

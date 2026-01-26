@@ -1,0 +1,13 @@
+/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/App/AppDelegate.swift
+/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/App/StoneApp.swift
+/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Models/Project.swift
+/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Models/TimeEntry.swift
+/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/SystemEventService.swift
+/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/TimeTrackerService.swift
+/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/Color+Hex.swift
+/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/Date+Extensions.swift
+/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/TimeInterval+Formatting.swift
+/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/MenuBarViewModel.swift
+/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/TimeEntryViewModel.swift
+/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/MenuBar/MenuBarView.swift
+/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/TimeEntry/TimeEntryListView.swift

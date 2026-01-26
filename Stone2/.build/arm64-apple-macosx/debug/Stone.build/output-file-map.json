@@ -1,0 +1,96 @@
+{
+  "": {
+    "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/master.swiftdeps"
+  },
+  "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/App/AppDelegate.swift": {
+    "dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/AppDelegate.d",
+    "object": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/AppDelegate.swift.o",
+    "swiftmodule": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/AppDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/AppDelegate.swiftdeps",
+    "diagnostics": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/AppDelegate.dia"
+  },
+  "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/App/StoneApp.swift": {
+    "dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/StoneApp.d",
+    "object": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/StoneApp.swift.o",
+    "swiftmodule": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/StoneApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/StoneApp.swiftdeps",
+    "diagnostics": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/StoneApp.dia"
+  },
+  "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Models/Project.swift": {
+    "dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Project.d",
+    "object": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Project.swift.o",
+    "swiftmodule": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Project~partial.swiftmodule",
+    "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Project.swiftdeps",
+    "diagnostics": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Project.dia"
+  },
+  "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Models/TimeEntry.swift": {
+    "dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntry.d",
+    "object": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntry.swift.o",
+    "swiftmodule": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntry~partial.swiftmodule",
+    "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntry.swiftdeps",
+    "diagnostics": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntry.dia"
+  },
+  "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/SystemEventService.swift": {
+    "dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/SystemEventService.d",
+    "object": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/SystemEventService.swift.o",
+    "swiftmodule": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/SystemEventService~partial.swiftmodule",
+    "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/SystemEventService.swiftdeps",
+    "diagnostics": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/SystemEventService.dia"
+  },
+  "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/TimeTrackerService.swift": {
+    "dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeTrackerService.d",
+    "object": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeTrackerService.swift.o",
+    "swiftmodule": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeTrackerService~partial.swiftmodule",
+    "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeTrackerService.swiftdeps",
+    "diagnostics": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeTrackerService.dia"
+  },
+  "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/Color+Hex.swift": {
+    "dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Color+Hex.d",
+    "object": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Color+Hex.swift.o",
+    "swiftmodule": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Color+Hex~partial.swiftmodule",
+    "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Color+Hex.swiftdeps",
+    "diagnostics": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Color+Hex.dia"
+  },
+  "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/Date+Extensions.swift": {
+    "dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Date+Extensions.d",
+    "object": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Date+Extensions.swift.o",
+    "swiftmodule": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Date+Extensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Date+Extensions.swiftdeps",
+    "diagnostics": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Date+Extensions.dia"
+  },
+  "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/TimeInterval+Formatting.swift": {
+    "dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeInterval+Formatting.d",
+    "object": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeInterval+Formatting.swift.o",
+    "swiftmodule": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeInterval+Formatting~partial.swiftmodule",
+    "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeInterval+Formatting.swiftdeps",
+    "diagnostics": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeInterval+Formatting.dia"
+  },
+  "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/MenuBarViewModel.swift": {
+    "dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarViewModel.d",
+    "object": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarViewModel.swift.o",
+    "swiftmodule": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarViewModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarViewModel.swiftdeps",
+    "diagnostics": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarViewModel.dia"
+  },
+  "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/TimeEntryViewModel.swift": {
+    "dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryViewModel.d",
+    "object": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryViewModel.swift.o",
+    "swiftmodule": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryViewModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryViewModel.swiftdeps",
+    "diagnostics": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryViewModel.dia"
+  },
+  "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/MenuBar/MenuBarView.swift": {
+    "dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarView.d",
+    "object": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarView.swift.o",
+    "swiftmodule": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarView~partial.swiftmodule",
+    "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarView.swiftdeps",
+    "diagnostics": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarView.dia"
+  },
+  "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/TimeEntry/TimeEntryListView.swift": {
+    "dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryListView.d",
+    "object": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryListView.swift.o",
+    "swiftmodule": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryListView~partial.swiftmodule",
+    "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryListView.swiftdeps",
+    "diagnostics": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryListView.dia"
+  }
+}
