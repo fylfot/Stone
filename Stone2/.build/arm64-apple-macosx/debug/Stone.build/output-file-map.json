@@ -93,6 +93,13 @@
     "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ProjectsViewModel.swiftdeps",
     "diagnostics": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ProjectsViewModel.dia"
   },
+  "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/ReportsViewModel.swift": {
+    "dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ReportsViewModel.d",
+    "object": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ReportsViewModel.swift.o",
+    "swiftmodule": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ReportsViewModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ReportsViewModel.swiftdeps",
+    "diagnostics": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ReportsViewModel.dia"
+  },
   "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/TimeEntryViewModel.swift": {
     "dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryViewModel.d",
     "object": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryViewModel.swift.o",
@@ -106,6 +113,13 @@
     "swiftmodule": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarView~partial.swiftmodule",
     "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarView.swiftdeps",
     "diagnostics": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarView.dia"
+  },
+  "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/Reports/ReportsWindow.swift": {
+    "dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ReportsWindow.d",
+    "object": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ReportsWindow.swift.o",
+    "swiftmodule": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ReportsWindow~partial.swiftmodule",
+    "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ReportsWindow.swiftdeps",
+    "diagnostics": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ReportsWindow.dia"
   },
   "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/Settings/ProjectsSettingsView.swift": {
     "dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ProjectsSettingsView.d",

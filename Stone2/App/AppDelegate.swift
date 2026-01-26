@@ -3,16 +3,22 @@ import SwiftUI
 import SwiftData
 
 final class AppDelegate: NSObject, NSApplicationDelegate {
+    static private(set) var shared: AppDelegate!
+
     private var statusItem: NSStatusItem?
     private var popover: NSPopover?
+    private var reportsWindow: NSWindow?
     private var menuBarViewModel: MenuBarViewModel?
     private var timeEntryViewModel: TimeEntryViewModel?
+    private var reportsViewModel: ReportsViewModel?
     private var modelContainer: ModelContainer?
 
     private let timeTracker = TimeTrackerService()
     private let systemEvents = SystemEventService()
 
     func applicationDidFinishLaunching(_ notification: Notification) {
+        AppDelegate.shared = self
+
         setupModelContainer()
         setupViewModels()
         setupStatusItem()
@@ -60,6 +66,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
         timeEntryViewModel = TimeEntryViewModel()
         timeEntryViewModel?.configure(modelContext: context)
+
+        reportsViewModel = ReportsViewModel()
+        reportsViewModel?.configure(modelContext: context)
     }
 
     private func setupStatusItem() {
@@ -119,5 +128,35 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             // Focus the popover window
             popover.contentViewController?.view.window?.makeKey()
         }
+    }
+
+    func showReportsWindow() {
+        // Close popover first
+        popover?.performClose(nil)
+
+        if let window = reportsWindow {
+            window.makeKeyAndOrderFront(nil)
+            NSApp.activate(ignoringOtherApps: true)
+            return
+        }
+
+        guard let viewModel = reportsViewModel else { return }
+
+        // Refresh data when opening
+        viewModel.loadData()
+
+        let contentView = ReportsWindow(viewModel: viewModel)
+        let hostingController = NSHostingController(rootView: contentView)
+
+        let window = NSWindow(contentViewController: hostingController)
+        window.title = "Reports"
+        window.styleMask = [.titled, .closable, .miniaturizable, .resizable]
+        window.setContentSize(NSSize(width: 700, height: 500))
+        window.center()
+        window.isReleasedWhenClosed = false
+        window.makeKeyAndOrderFront(nil)
+
+        reportsWindow = window
+        NSApp.activate(ignoringOtherApps: true)
     }
 }

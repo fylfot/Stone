@@ -11,8 +11,10 @@
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/TimeInterval+Formatting.swift
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/MenuBarViewModel.swift
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/ProjectsViewModel.swift
+/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/ReportsViewModel.swift
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/TimeEntryViewModel.swift
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/MenuBar/MenuBarView.swift
+/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/Reports/ReportsWindow.swift
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/Settings/ProjectsSettingsView.swift
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/Settings/SettingsWindow.swift
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/Settings/TagsSettingsView.swift

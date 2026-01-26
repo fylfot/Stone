@@ -81,3 +81,35 @@
 - Tab-based settings work well on macOS
 - Draggable modifier is simple but effective for basic reordering
 - Context menus are idiomatic for macOS list interactions
+
+---
+
+## Story 3: Phase 3 - Reporting
+**Status:** COMPLETE
+**Date:** 2026-01-26
+
+### What was implemented:
+- ReportsViewModel with period selection and data aggregation
+- ReportPeriod enum for Today/Yesterday/This Week/Last Week/This Month/Last Month/Custom
+- ProjectSummary and DaySummary data structures
+- Reports window with tabbed interface (Summary, Timeline, Entries)
+- SummaryView with pie chart (Swift Charts) and project breakdown list
+- TimelineView with bar chart showing daily hours
+- EntriesListView with searchable time entries
+- CSV export with proper escaping and NSSavePanel integration
+- Reports accessible from menu bar
+
+### Files created:
+- Stone2/ViewModels/ReportsViewModel.swift - Report data management
+- Stone2/Views/Reports/ReportsWindow.swift - Reports window with all views
+
+### Files modified:
+- Stone2/App/AppDelegate.swift - Added showReportsWindow() method
+- Stone2/Views/MenuBar/MenuBarView.swift - Added Reports menu item
+
+### Lessons learned:
+- Swift Charts SectorMark works well for pie charts
+- Use innerRadius for donut charts
+- NSSavePanel integrates cleanly for file export
+- Search filtering is straightforward with string contains
+- Tab-based interface works well for multiple report views

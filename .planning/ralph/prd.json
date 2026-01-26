@@ -50,7 +50,7 @@
         "User can export time data to CSV format",
         "User can open Reports window from menu bar"
       ],
-      "passes": false
+      "passes": true
     },
     {
       "id": "story-4",

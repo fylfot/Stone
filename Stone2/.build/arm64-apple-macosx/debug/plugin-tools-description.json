@@ -80,11 +80,19 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/ReportsViewModel.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/TimeEntryViewModel.swift"
         },
         {
           "kind" : "file",
           "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/MenuBar/MenuBarView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/Reports/ReportsWindow.swift"
         },
         {
           "kind" : "file",
@@ -128,8 +136,10 @@
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeInterval+Formatting.swift.o",
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarViewModel.swift.o",
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ProjectsViewModel.swift.o",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ReportsViewModel.swift.o",
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryViewModel.swift.o",
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarView.swift.o",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ReportsWindow.swift.o",
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ProjectsSettingsView.swift.o",
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/SettingsWindow.swift.o",
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TagsSettingsView.swift.o",
@@ -246,11 +256,19 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ReportsViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryViewModel.swift.o"
         },
         {
           "kind" : "file",
           "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ReportsWindow.swift.o"
         },
         {
           "kind" : "file",
@@ -288,8 +306,10 @@
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/TimeInterval+Formatting.swift",
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/MenuBarViewModel.swift",
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/ProjectsViewModel.swift",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/ReportsViewModel.swift",
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/TimeEntryViewModel.swift",
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/MenuBar/MenuBarView.swift",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/Reports/ReportsWindow.swift",
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/Settings/ProjectsSettingsView.swift",
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/Settings/SettingsWindow.swift",
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/Settings/TagsSettingsView.swift",
@@ -524,8 +544,10 @@
       "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/TimeInterval+Formatting.swift",
       "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/MenuBarViewModel.swift",
       "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/ProjectsViewModel.swift",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/ReportsViewModel.swift",
       "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/TimeEntryViewModel.swift",
       "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/MenuBar/MenuBarView.swift",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/Reports/ReportsWindow.swift",
       "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/Settings/ProjectsSettingsView.swift",
       "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/Settings/SettingsWindow.swift",
       "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/Settings/TagsSettingsView.swift",
@@ -829,11 +851,19 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/ReportsViewModel.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/TimeEntryViewModel.swift"
         },
         {
           "kind" : "file",
           "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/MenuBar/MenuBarView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/Reports/ReportsWindow.swift"
         },
         {
           "kind" : "file",
@@ -896,6 +926,14 @@
         {
           "kind" : "file",
           "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ProjectsViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ReportsViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ReportsWindow.swift.o"
         },
         {
           "kind" : "file",
@@ -996,6 +1034,14 @@
         {
           "kind" : "file",
           "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ProjectsViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ReportsViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/ReportsWindow.swift.o"
         },
         {
           "kind" : "file",

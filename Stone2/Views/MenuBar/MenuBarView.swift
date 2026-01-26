@@ -98,8 +98,8 @@ struct MenuBarView: View {
                 showNewProjectSheet = true
             }
 
-            MenuButton(title: "Time Entries...", icon: "clock") {
-                showTimeEntries = true
+            MenuButton(title: "Reports...", icon: "chart.pie", shortcut: "r") {
+                AppDelegate.shared.showReportsWindow()
             }
 
             Divider()
