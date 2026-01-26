@@ -51,6 +51,13 @@
     "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/CloudKitSyncService.swiftdeps",
     "diagnostics": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/CloudKitSyncService.dia"
   },
+  "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/LaunchAtLoginService.swift": {
+    "dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/LaunchAtLoginService.d",
+    "object": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/LaunchAtLoginService.swift.o",
+    "swiftmodule": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/LaunchAtLoginService~partial.swiftmodule",
+    "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/LaunchAtLoginService.swiftdeps",
+    "diagnostics": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/LaunchAtLoginService.dia"
+  },
   "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/SystemEventService.swift": {
     "dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/SystemEventService.d",
     "object": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/SystemEventService.swift.o",

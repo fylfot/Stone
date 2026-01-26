@@ -6,6 +6,7 @@ struct StoneApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @State private var projectsViewModel = ProjectsViewModel()
     @State private var syncService = CloudKitSyncService()
+    @State private var launchAtLoginService = LaunchAtLoginService()
 
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
@@ -28,11 +29,15 @@ struct StoneApp: App {
 
     var body: some Scene {
         Settings {
-            SettingsWindow(viewModel: projectsViewModel, syncService: syncService)
-                .onAppear {
-                    let context = ModelContext(sharedModelContainer)
-                    projectsViewModel.configure(modelContext: context)
-                }
+            SettingsWindow(
+                viewModel: projectsViewModel,
+                syncService: syncService,
+                launchAtLoginService: launchAtLoginService
+            )
+            .onAppear {
+                let context = ModelContext(sharedModelContainer)
+                projectsViewModel.configure(modelContext: context)
+            }
         }
         .modelContainer(sharedModelContainer)
     }

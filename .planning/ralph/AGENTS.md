@@ -68,3 +68,64 @@ Future iterations will read this to learn from past work.
 - Tests in `Tests/StoneTests.swift`
 - Import SwiftUI in tests if testing Color extensions
 - Use @testable import Stone
+
+## Additional Services Discovered
+
+### CloudKit Sync
+- CloudKitSyncService wraps CKContainer for iCloud sync
+- Use CKAccountStatus for account availability
+- NotificationCenter for CKAccountChanged events
+- SwiftData supports CloudKit via cloudKitDatabase parameter
+- Server-wins conflict resolution is safest
+
+### Launch at Login
+- Use SMAppService.mainApp for modern login items API
+- Check .status for .requiresApproval state
+- register()/unregister() for enabling/disabling
+
+### Reports
+- ReportsViewModel aggregates TimeEntry data
+- Swift Charts for pie (SectorMark) and bar (BarMark) charts
+- NSSavePanel for CSV export
+- ReportPeriod enum for date range selection
+
+## Complete File Manifest
+
+### App Layer
+- App/StoneApp.swift - @main entry, Scene configuration
+- App/AppDelegate.swift - Menu bar setup, window management
+
+### Models
+- Models/Project.swift - SwiftData project model
+- Models/TimeEntry.swift - SwiftData time entry model
+- Models/Folder.swift - Project folder hierarchy
+- Models/Tag.swift - Project tagging
+
+### Services
+- Services/TimeTrackerService.swift - Timer management
+- Services/SystemEventService.swift - Sleep/wake/idle detection
+- Services/CloudKitSyncService.swift - iCloud sync
+- Services/LaunchAtLoginService.swift - Login item management
+
+### ViewModels
+- ViewModels/MenuBarViewModel.swift - Menu bar state
+- ViewModels/TimeEntryViewModel.swift - Entry editing
+- ViewModels/ProjectsViewModel.swift - Project management
+- ViewModels/ReportsViewModel.swift - Report data
+
+### Views
+- Views/MenuBar/MenuBarView.swift - Popover content
+- Views/TimeEntry/TimeEntryListView.swift - Entry list/edit
+- Views/Settings/SettingsWindow.swift - Preferences container
+- Views/Settings/ProjectsSettingsView.swift - Project management
+- Views/Settings/TagsSettingsView.swift - Tag management
+- Views/Reports/ReportsWindow.swift - Reports window
+- Views/Components/SyncStatusView.swift - Sync indicator
+
+### Utilities
+- Utilities/TimeInterval+Formatting.swift
+- Utilities/Color+Hex.swift
+- Utilities/Date+Extensions.swift
+
+### Tests
+- Tests/StoneTests.swift

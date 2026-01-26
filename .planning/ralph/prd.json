@@ -75,7 +75,7 @@
         "Menu bar icon renders correctly in both light and dark mode",
         "No memory leaks detected via Instruments profiling"
       ],
-      "passes": false
+      "passes": true
     }
   ]
 }

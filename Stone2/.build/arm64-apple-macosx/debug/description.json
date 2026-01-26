@@ -56,6 +56,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/LaunchAtLoginService.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/SystemEventService.swift"
         },
         {
@@ -138,6 +142,7 @@
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Tag.swift.o",
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntry.swift.o",
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/CloudKitSyncService.swift.o",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/LaunchAtLoginService.swift.o",
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/SystemEventService.swift.o",
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeTrackerService.swift.o",
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Color+Hex.swift.o",
@@ -242,6 +247,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/LaunchAtLoginService.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/SystemEventService.swift.o"
         },
         {
@@ -318,6 +327,7 @@
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Models/Tag.swift",
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Models/TimeEntry.swift",
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/CloudKitSyncService.swift",
+        "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/LaunchAtLoginService.swift",
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/SystemEventService.swift",
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/TimeTrackerService.swift",
         "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/Color+Hex.swift",
@@ -558,6 +568,7 @@
       "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Models/Tag.swift",
       "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Models/TimeEntry.swift",
       "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/CloudKitSyncService.swift",
+      "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/LaunchAtLoginService.swift",
       "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/SystemEventService.swift",
       "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/TimeTrackerService.swift",
       "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/Color+Hex.swift",
@@ -849,6 +860,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/LaunchAtLoginService.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/SystemEventService.swift"
         },
         {
@@ -940,6 +955,10 @@
         {
           "kind" : "file",
           "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Folder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/LaunchAtLoginService.swift.o"
         },
         {
           "kind" : "file",
@@ -1056,6 +1075,10 @@
         {
           "kind" : "file",
           "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/Folder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/LaunchAtLoginService.swift.o"
         },
         {
           "kind" : "file",

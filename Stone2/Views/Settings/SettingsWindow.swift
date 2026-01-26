@@ -4,6 +4,7 @@ import SwiftData
 struct SettingsWindow: View {
     @Bindable var viewModel: ProjectsViewModel
     let syncService: CloudKitSyncService
+    let launchAtLoginService: LaunchAtLoginService
     @State private var selectedTab = "projects"
 
     var body: some View {
@@ -26,7 +27,7 @@ struct SettingsWindow: View {
                 }
                 .tag("sync")
 
-            GeneralSettingsView()
+            GeneralSettingsView(launchAtLoginService: launchAtLoginService)
                 .tabItem {
                     Label("General", systemImage: "gear")
                 }
@@ -37,11 +38,38 @@ struct SettingsWindow: View {
 }
 
 struct GeneralSettingsView: View {
-    @AppStorage("launchAtLogin") private var launchAtLogin = false
+    let launchAtLoginService: LaunchAtLoginService
 
     var body: some View {
         Form {
-            Toggle("Launch at Login", isOn: $launchAtLogin)
+            Section("Startup") {
+                Toggle("Launch at Login", isOn: .init(
+                    get: { launchAtLoginService.isEnabled },
+                    set: { launchAtLoginService.setEnabled($0) }
+                ))
+
+                if launchAtLoginService.status == .requiresApproval {
+                    HStack {
+                        Image(systemName: "exclamationmark.triangle")
+                            .foregroundStyle(.orange)
+                        Text("Approval required in System Settings > General > Login Items")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+            }
+
+            Section("About") {
+                LabeledContent("Version") {
+                    Text("2.0.0")
+                        .foregroundStyle(.secondary)
+                }
+
+                LabeledContent("Build") {
+                    Text("1")
+                        .foregroundStyle(.secondary)
+                }
+            }
         }
         .formStyle(.grouped)
         .padding()

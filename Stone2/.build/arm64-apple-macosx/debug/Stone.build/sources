@@ -5,6 +5,7 @@
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Models/Tag.swift
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Models/TimeEntry.swift
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/CloudKitSyncService.swift
+/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/LaunchAtLoginService.swift
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/SystemEventService.swift
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/TimeTrackerService.swift
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/Color+Hex.swift

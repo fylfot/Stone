@@ -149,3 +149,44 @@
 - NotificationCenter.default for CKAccountChanged works well
 - SwiftData CloudKit config is straightforward but needs entitlements
 - Server-wins conflict resolution is safest for time tracking
+
+---
+
+## Story 5: Phase 5 - Polish
+**Status:** COMPLETE
+**Date:** 2026-01-26
+
+### What was implemented:
+- LaunchAtLoginService using SMAppService API
+- Launch at login toggle in General settings
+- Status feedback for approval requirements
+- Version/Build info in About section
+- Menu bar icon already uses isTemplate for light/dark mode support
+- Weak references and proper cleanup throughout codebase
+
+### Files created:
+- Stone2/Services/LaunchAtLoginService.swift - SMAppService wrapper
+
+### Files modified:
+- Stone2/Views/Settings/SettingsWindow.swift - Enhanced General tab
+- Stone2/App/StoneApp.swift - Added launchAtLoginService
+
+### Lessons learned:
+- SMAppService.mainApp is the modern way to handle login items
+- requiresApproval status needs System Settings guidance
+- isTemplate = true on NSImage handles dark mode automatically
+- Version/Build can be hardcoded or read from Bundle
+
+---
+
+## PROJECT COMPLETE
+
+All 5 phases implemented:
+1. ✅ Phase 1: Foundation + Core Tracking
+2. ✅ Phase 2: Project Organization
+3. ✅ Phase 3: Reporting
+4. ✅ Phase 4: CloudKit Sync
+5. ✅ Phase 5: Polish
+
+Total files created: 25+ Swift files
+Architecture: MVVM with @Observable, SwiftData, AppKit+SwiftUI hybrid
