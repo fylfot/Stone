@@ -101,47 +101,55 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| TRACK-01 | TBD | Pending |
-| TRACK-02 | TBD | Pending |
-| TRACK-03 | TBD | Pending |
-| TRACK-04 | TBD | Pending |
-| TRACK-05 | TBD | Pending |
-| TRACK-06 | TBD | Pending |
-| TRACK-07 | TBD | Pending |
-| TRACK-08 | TBD | Pending |
-| TRACK-09 | TBD | Pending |
-| TRACK-10 | TBD | Pending |
-| PROJ-01 | TBD | Pending |
-| PROJ-02 | TBD | Pending |
-| PROJ-03 | TBD | Pending |
-| PROJ-04 | TBD | Pending |
-| PROJ-05 | TBD | Pending |
-| PROJ-06 | TBD | Pending |
-| PROJ-07 | TBD | Pending |
-| PROJ-08 | TBD | Pending |
-| PROJ-09 | TBD | Pending |
-| REPORT-01 | TBD | Pending |
-| REPORT-02 | TBD | Pending |
-| REPORT-03 | TBD | Pending |
-| REPORT-04 | TBD | Pending |
-| REPORT-05 | TBD | Pending |
-| REPORT-06 | TBD | Pending |
-| REPORT-07 | TBD | Pending |
-| SYNC-01 | TBD | Pending |
-| SYNC-02 | TBD | Pending |
-| SYNC-03 | TBD | Pending |
-| UI-01 | TBD | Pending |
-| UI-02 | TBD | Pending |
-| UI-03 | TBD | Pending |
-| UI-04 | TBD | Pending |
-| UI-05 | TBD | Pending |
-| UI-06 | TBD | Pending |
+| TRACK-01 | Phase 1 | Pending |
+| TRACK-02 | Phase 1 | Pending |
+| TRACK-03 | Phase 1 | Pending |
+| TRACK-04 | Phase 1 | Pending |
+| TRACK-05 | Phase 1 | Pending |
+| TRACK-06 | Phase 1 | Pending |
+| TRACK-07 | Phase 1 | Pending |
+| TRACK-08 | Phase 1 | Pending |
+| TRACK-09 | Phase 1 | Pending |
+| TRACK-10 | Phase 1 | Pending |
+| PROJ-01 | Phase 2 | Pending |
+| PROJ-02 | Phase 2 | Pending |
+| PROJ-03 | Phase 2 | Pending |
+| PROJ-04 | Phase 2 | Pending |
+| PROJ-05 | Phase 2 | Pending |
+| PROJ-06 | Phase 2 | Pending |
+| PROJ-07 | Phase 2 | Pending |
+| PROJ-08 | Phase 2 | Pending |
+| PROJ-09 | Phase 2 | Pending |
+| REPORT-01 | Phase 3 | Pending |
+| REPORT-02 | Phase 3 | Pending |
+| REPORT-03 | Phase 3 | Pending |
+| REPORT-04 | Phase 3 | Pending |
+| REPORT-05 | Phase 3 | Pending |
+| REPORT-06 | Phase 3 | Pending |
+| REPORT-07 | Phase 3 | Pending |
+| SYNC-01 | Phase 4 | Pending |
+| SYNC-02 | Phase 4 | Pending |
+| SYNC-03 | Phase 4 | Pending |
+| UI-01 | Phase 1 | Pending |
+| UI-02 | Phase 2 | Pending |
+| UI-03 | Phase 3 | Pending |
+| UI-04 | Phase 1 | Pending |
+| UI-05 | Phase 5 | Pending |
+| UI-06 | Phase 1 | Pending |
 
 **Coverage:**
 - v1 requirements: 35 total
-- Mapped to phases: 0
-- Unmapped: 35
+- Mapped to phases: 35
+- Unmapped: 0
+- Coverage: 100%
+
+**By Phase:**
+- Phase 1 (Foundation + Core Tracking): 13 requirements
+- Phase 2 (Project Organization): 10 requirements
+- Phase 3 (Reporting): 8 requirements
+- Phase 4 (CloudKit Sync): 3 requirements
+- Phase 5 (Polish): 1 requirement
 
 ---
 *Requirements defined: 2026-01-26*
-*Last updated: 2026-01-26 after initial definition*
+*Last updated: 2026-01-26 after roadmap creation*
