@@ -10,6 +10,9 @@ final class Project: Identifiable {
     var createdAt: Date
     var sortOrder: Int
 
+    var folder: Folder?
+    var tags: [Tag] = []
+
     @Relationship(deleteRule: .cascade, inverse: \TimeEntry.project)
     var entries: [TimeEntry] = []
 

@@ -32,7 +32,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     private func setupModelContainer() {
         let schema = Schema([
             Project.self,
-            TimeEntry.self
+            TimeEntry.self,
+            Folder.self,
+            Tag.self
         ])
         let modelConfiguration = ModelConfiguration(
             schema: schema,

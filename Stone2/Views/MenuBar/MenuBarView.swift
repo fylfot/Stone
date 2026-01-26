@@ -105,7 +105,7 @@ struct MenuBarView: View {
             Divider()
 
             MenuButton(title: "Preferences...", icon: "gear", shortcut: ",") {
-                // Open preferences
+                NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
             }
 
             MenuButton(title: "Quit Stone", icon: "power", shortcut: "q") {

@@ -35,7 +35,7 @@
         "User can reorder projects within folders via drag-and-drop",
         "User can open Preferences window to manage projects"
       ],
-      "passes": false
+      "passes": true
     },
     {
       "id": "story-3",

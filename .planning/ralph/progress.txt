@@ -41,3 +41,43 @@
 - SwiftData @Model classes need to explicitly conform to Identifiable for ForEach
 - CGFloat arrays use subscript access [index], not .at(index)
 - TimeInterval formatting should use Int math (%) not Double truncatingRemainder
+
+---
+
+## Story 2: Phase 2 - Project Organization
+**Status:** COMPLETE
+**Date:** 2026-01-26
+
+### What was implemented:
+- Added Folder model for hierarchical project organization
+- Added Tag model with many-to-many relationship to projects
+- Updated Project model with folder and tags relationships
+- Created comprehensive Preferences window with TabView
+- Implemented ProjectsSettingsView with folder tree and project list
+- Added TagsSettingsView for tag management
+- Inline editing via double-click for both projects and folders
+- Confirmation dialogs before deletion
+- Tag filtering with visual filter banner
+- Drag-and-drop support via draggable modifier
+- Context menus for all CRUD operations
+
+### Files created:
+- Stone2/Models/Folder.swift - Folder model for hierarchy
+- Stone2/Models/Tag.swift - Tag model for labeling
+- Stone2/ViewModels/ProjectsViewModel.swift - Full project management state
+- Stone2/Views/Settings/SettingsWindow.swift - Settings container with tabs
+- Stone2/Views/Settings/ProjectsSettingsView.swift - Project/folder management
+- Stone2/Views/Settings/TagsSettingsView.swift - Tag management
+
+### Files modified:
+- Stone2/Models/Project.swift - Added folder and tags relationships
+- Stone2/App/StoneApp.swift - Added new models to schema, integrated settings
+- Stone2/App/AppDelegate.swift - Added new models to schema
+- Stone2/Views/MenuBar/MenuBarView.swift - Added preferences window action
+
+### Lessons learned:
+- SwiftUI DisclosureGroup works well for folder hierarchies
+- Use confirmationDialog for delete confirmations
+- Tab-based settings work well on macOS
+- Draggable modifier is simple but effective for basic reordering
+- Context menus are idiomatic for macOS list interactions
