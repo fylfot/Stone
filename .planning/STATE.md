@@ -5,60 +5,63 @@
 See: .planning/PROJECT.md (updated 2026-01-26)
 
 **Core value:** Users can accurately track and understand where their time goes across projects with minimal friction.
-**Current focus:** Phase 1 - Foundation + Core Tracking
+**Current focus:** Planning next milestone
 
 ## Current Position
 
-Phase: 1 of 5 (Foundation + Core Tracking)
-Plan: Ready to plan
-Status: Ready to plan
-Last activity: 2026-01-26 - Roadmap created with 5 phases covering all 35 v1 requirements
+Phase: v1.0 complete
+Plan: N/A
+Status: Milestone shipped
+Last activity: 2026-01-26 — v1.0 milestone complete
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [██████████] 100% (v1.0)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 0
-- Average duration: N/A
-- Total execution time: 0.0 hours
+- Total phases completed: 5
+- Total requirements shipped: 35
+- Timeline: 2026-01-26 (single day)
 
 **By Phase:**
 
-| Phase | Plans | Total | Avg/Plan |
-|-------|-------|-------|----------|
-| - | - | - | - |
-
-**Recent Trend:**
-- No plans completed yet
-
-*Updated after each plan completion*
+| Phase | Description | Status |
+|-------|-------------|--------|
+| 1 | Foundation + Core Tracking | Complete |
+| 2 | Project Organization | Complete |
+| 3 | Reporting | Complete |
+| 4 | CloudKit Sync | Complete |
+| 5 | Polish | Complete |
 
 ## Accumulated Context
 
 ### Decisions
 
-Decisions are logged in PROJECT.md Key Decisions table.
-Recent decisions affecting current work:
+Decisions logged in PROJECT.md Key Decisions table.
+Key v1.0 decisions:
 
-- Architecture: Using Core Data + CloudKit (not SwiftData) due to CloudKit sharing limitations
-- Platform: macOS 14+ target for latest SwiftUI features (MenuBarExtra, @Observable)
-- Timer strategy: Date-based calculation to prevent drift across sleep/wake cycles
+- SwiftUI + SwiftData over AppKit — ✓ Good
+- CloudKit via SwiftData — ✓ Good
+- macOS 14+ minimum — ✓ Good
+- @Observable over ObservableObject — ✓ Good
+- SMAppService for launch at login — ✓ Good
 
 ### Pending Todos
 
-None yet.
+None — milestone complete.
 
 ### Blockers/Concerns
 
-None yet.
+- CloudKit schema not yet deployed to production (do before App Store release)
+- Legacy data migration not implemented
+- No unit tests yet
 
 ## Session Continuity
 
-Last session: 2026-01-26 (roadmap creation)
-Stopped at: Roadmap and STATE.md created, ready to plan Phase 1
+Last session: 2026-01-26 (v1.0 milestone completion)
+Stopped at: Milestone archived, ready for next milestone planning
 Resume file: None
 
 ---
 
-*Next step: Run `/gsd:plan-phase 1` to break down Phase 1 into executable plans*
+*Next step: Run `/gsd:new-milestone` to plan v1.1 or v2.0*
