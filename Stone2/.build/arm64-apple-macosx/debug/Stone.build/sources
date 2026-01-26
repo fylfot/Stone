@@ -4,6 +4,7 @@
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Models/Project.swift
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Models/Tag.swift
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Models/TimeEntry.swift
+/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/CloudKitSyncService.swift
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/SystemEventService.swift
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/TimeTrackerService.swift
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Utilities/Color+Hex.swift
@@ -13,6 +14,7 @@
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/ProjectsViewModel.swift
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/ReportsViewModel.swift
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/ViewModels/TimeEntryViewModel.swift
+/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/Components/SyncStatusView.swift
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/MenuBar/MenuBarView.swift
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/Reports/ReportsWindow.swift
 /Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/Settings/ProjectsSettingsView.swift

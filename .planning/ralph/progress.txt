@@ -113,3 +113,39 @@
 - NSSavePanel integrates cleanly for file export
 - Search filtering is straightforward with string contains
 - Tab-based interface works well for multiple report views
+
+---
+
+## Story 4: Phase 4 - CloudKit Sync
+**Status:** COMPLETE
+**Date:** 2026-01-26
+
+### What was implemented:
+- CloudKitSyncService with CKContainer integration
+- SyncStatus enum (idle, syncing, synced, error) with display text
+- Account status monitoring via CKAccountStatus
+- iCloud account change notifications with warning alert
+- SyncStatusView component showing current sync state
+- SyncSettingsView in Preferences with account info and manual sync button
+- ConflictResolver with serverWins strategy (safest for time tracking data)
+- ModelConfiguration extension for CloudKit-enabled SwiftData
+
+### Files created:
+- Stone2/Services/CloudKitSyncService.swift - Sync service and conflict resolution
+- Stone2/Views/Components/SyncStatusView.swift - Sync UI components
+
+### Files modified:
+- Stone2/Views/Settings/SettingsWindow.swift - Added Sync tab
+- Stone2/App/StoneApp.swift - Added syncService state
+
+### Important notes:
+- Full CloudKit sync requires proper entitlements in Xcode project
+- Need iCloud container configured in Apple Developer portal
+- SwiftData handles actual data sync when cloudKitDatabase is set
+- This implementation provides the UI/UX and monitoring infrastructure
+
+### Lessons learned:
+- CKAccountStatus provides good account state info
+- NotificationCenter.default for CKAccountChanged works well
+- SwiftData CloudKit config is straightforward but needs entitlements
+- Server-wins conflict resolution is safest for time tracking

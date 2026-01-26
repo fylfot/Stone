@@ -3,6 +3,7 @@ import SwiftData
 
 struct SettingsWindow: View {
     @Bindable var viewModel: ProjectsViewModel
+    let syncService: CloudKitSyncService
     @State private var selectedTab = "projects"
 
     var body: some View {
@@ -18,6 +19,12 @@ struct SettingsWindow: View {
                     Label("Tags", systemImage: "tag")
                 }
                 .tag("tags")
+
+            SyncSettingsView(syncService: syncService)
+                .tabItem {
+                    Label("Sync", systemImage: "icloud")
+                }
+                .tag("sync")
 
             GeneralSettingsView()
                 .tabItem {

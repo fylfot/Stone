@@ -44,6 +44,13 @@
     "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntry.swiftdeps",
     "diagnostics": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntry.dia"
   },
+  "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/CloudKitSyncService.swift": {
+    "dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/CloudKitSyncService.d",
+    "object": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/CloudKitSyncService.swift.o",
+    "swiftmodule": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/CloudKitSyncService~partial.swiftmodule",
+    "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/CloudKitSyncService.swiftdeps",
+    "diagnostics": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/CloudKitSyncService.dia"
+  },
   "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Services/SystemEventService.swift": {
     "dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/SystemEventService.d",
     "object": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/SystemEventService.swift.o",
@@ -106,6 +113,13 @@
     "swiftmodule": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryViewModel~partial.swiftmodule",
     "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryViewModel.swiftdeps",
     "diagnostics": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/TimeEntryViewModel.dia"
+  },
+  "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/Components/SyncStatusView.swift": {
+    "dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/SyncStatusView.d",
+    "object": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/SyncStatusView.swift.o",
+    "swiftmodule": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/SyncStatusView~partial.swiftmodule",
+    "swift-dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/SyncStatusView.swiftdeps",
+    "diagnostics": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/SyncStatusView.dia"
   },
   "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/Views/MenuBar/MenuBarView.swift": {
     "dependencies": "/Users/stanhartmann/Documents/Repos/jamg/Stone/Stone2/.build/arm64-apple-macosx/debug/Stone.build/MenuBarView.d",

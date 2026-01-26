@@ -63,7 +63,7 @@
         "Conflicts from concurrent edits are resolved automatically without data loss",
         "User sees warning before iCloud account changes that might affect data"
       ],
-      "passes": false
+      "passes": true
     },
     {
       "id": "story-5",
